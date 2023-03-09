@@ -9,8 +9,7 @@ do
     n=get_int("Positive Number: ");
 }
 while (n<1 || n>8);
-for (n
-    for (int x = 0; x < n; x++)
-    {
-        printf("#\n");
-    };
+for (int x = 0; x < n; x++)
+{
+    printf("#\n");
+};
