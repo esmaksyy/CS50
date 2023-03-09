@@ -12,12 +12,9 @@ while (n<1 || n>8);
 for (int x = 0; x < n+1; x++)
 {
     for (int i = 0; i<n-x; i++)
-    if(i == 0 && x ==0)
     {
-        printf("\n");
-    }
-    printf(" ");
-
+        printf(" ");
+    };
     for (int e =0; e<x; e++)
     {
         if (e == x-1 )
@@ -27,8 +24,7 @@ for (int x = 0; x < n+1; x++)
         else
         {
             printf("#");
-
+        };
     };
-};
 };
 };
