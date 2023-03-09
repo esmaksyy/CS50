@@ -13,7 +13,8 @@ for (int x = 0; x < n; x++)
 {
    for (int i=0; i<x; i++)
    {
-     while (int k = 0; )
+     while (int k <
+    )
        printf("#");
    }
 };
