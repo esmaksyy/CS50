@@ -10,7 +10,7 @@ do
 }
 while (n<1 || n>8);
 for (int x = 0; x < n; x++)
-{for (int i = x; i>0;i--){
-    
+{for (int i = 0; i>;i--){
+
 }};
 };
