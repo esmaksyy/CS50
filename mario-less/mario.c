@@ -9,6 +9,5 @@ do
 while (n>0 && n<9)
 for (int n = 1; n < 9; n++)
 {
-    printf(n*"#")
-    printf("\n");
+    printf("#\n");
 }
