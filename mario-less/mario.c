@@ -10,7 +10,7 @@ do
 }
 while (n<1 || n>8);
 for (int x = 0; x < n; x++)
-{for (int i = 0; i<n-1;){
-
+{for (int i = 0; i<n-1; i++){
+    printf(" ");
 }};
 };
