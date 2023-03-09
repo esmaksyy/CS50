@@ -16,10 +16,10 @@ for (int x = 0; x < n; x++)
      for (int k= 0; k<(n-x); k++){
         printf(" ");
      }
-       printf("#");
+     printf("#\n");
    };
 if(x==n-1){
-    printf("#\n");
+    printf("\n");
    };
 };
 };
