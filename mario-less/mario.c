@@ -10,5 +10,5 @@ do
 }
 while (n<1 || n>8);
 for (int x = 0; x < n; x++)
-{}
+{};
 };
