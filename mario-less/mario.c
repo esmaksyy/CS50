@@ -12,13 +12,13 @@ while (n<1 || n>8);
 
 for (int x = 0; x < n+1; x++)
 {
-    for (int i = 0; i<n-x; i++)
+    for (int i = 0; i<n-x+1; i++)
     {
         printf(" ");
     };
-    for (int e =0; e<x; e++)
+    for (int e =0; e<x+1; e++)
     {
-        if (e == x-1 )
+        if (e == x )
         {
             printf("#\n");
         }
