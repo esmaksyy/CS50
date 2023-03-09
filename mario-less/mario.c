@@ -9,7 +9,7 @@ do
     n=get_int("Positive Number: ");
 }
 while (n>0 && n<9);
-for (int n = 1; n < 9; n++)
+for (int x = 1; x < 9; x++)
 {
     printf("#\n");
 };
