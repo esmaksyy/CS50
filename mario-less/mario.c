@@ -29,6 +29,67 @@ if (n==3)
     for (int x = 0; x < n; x++)
     {
         printf("#\n");
-        
-    }
-}
+        printf("##\n");
+        printf("###\n");
+    };
+};
+if (n==4)
+{
+    for (int x = 0; x < n; x++)
+    {
+        printf("#\n");
+        printf("##\n");
+        printf("###\n");
+        printf("####\n");
+    };
+};
+if (n==5)
+{
+    for (int x = 0; x < n; x++)
+    {
+        printf("#\n");
+        printf("##\n");
+        printf("###\n");
+        printf("####\n");
+        printf("#####\n");
+    };
+};
+if (n==6)
+{
+    for (int x = 0; x < n; x++)
+    {
+        printf("#\n");
+        printf("##\n");
+        printf("###\n");
+        printf("####\n");
+        printf("#####\n");
+        printf("######\n");
+    };
+};
+if (n==7)
+{
+    for (int x = 0; x < n; x++)
+    {
+        printf("#\n");
+        printf("##\n");
+        printf("###\n");
+        printf("####\n");
+        printf("#####\n");
+        printf("######\n");
+        printf("#######\n");
+    };
+};
+if (n==8)
+{
+    for (int x = 0; x < n; x++)
+    {
+        printf("#\n");
+        printf("##\n");
+        printf("###\n");
+        printf("####\n");
+        printf("#####\n");
+        printf("######\n");
+        printf("#######\n");
+        printf("########\n");
+    };
+};
