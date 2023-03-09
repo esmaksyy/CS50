@@ -10,7 +10,21 @@ do
 }
 while (n<1 || n>8);
 for (int x = 0; x < n; x++)
-{for (int i = 0; i<n-x; i++){
-    printf(" ");
-}};
+{
+    for (int i = 0; i<n-x; i++)
+    {
+        printf(" ");
+    };
+    for (int e =0; e<x; e++)
+    {
+        if (e == x-1 )
+        {
+            printf("#\n");
+        }
+        else
+        {
+            printf("#");
+        };
+    };
+};
 };
