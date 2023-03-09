@@ -11,9 +11,6 @@ do
 while (n<1 || n>8);
 for (int x = 0; x < n; x++)
 {
-    do
-    {
-        printf("#\n");
-    }
-    while(>x>0)
+   for (int i=0; i<x; i++)
+   {printf("#\n");}
 };
