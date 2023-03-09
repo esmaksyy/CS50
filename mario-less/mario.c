@@ -21,10 +21,6 @@ for (int x = 0; x < n; x++)
         {
             printf("#\n");
         }
-        else
-        {
-            printf("#");
-        };
     };
 };
 };
