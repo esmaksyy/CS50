@@ -16,9 +16,9 @@ for (int x = 0; x < n+1; x++)
     {
         printf(" ");
     };
-    for (int e =0; e<x+1; e++)
+    for (int e =0; e<x; e++)
     {
-        if (e == x )
+        if (e == x-1 )
         {
             printf("#\n");
         }
