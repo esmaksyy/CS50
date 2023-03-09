@@ -21,4 +21,6 @@ if (n==2);
     for (int x = 0; x < n; x++)
     {
         printf("#\n");
+        printf("##\n");
     };
+}
