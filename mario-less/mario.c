@@ -9,7 +9,6 @@ do
     n=get_int("Positive Number: ");
 }
 while (n<1 || n>8);
-
 for (int x = 0; x < n; x++)
 {
     for (int i = 0; i<n-1-x; i++)
