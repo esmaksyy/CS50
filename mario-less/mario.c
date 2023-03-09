@@ -18,8 +18,8 @@ for (int x = 0; x < n; x++)
      }
        printf("#");
    };
-   if(x==n-1){
-    printf("\n");
+if(x==n-1){
+    printf("#\n");
    };
 };
 };
