@@ -12,7 +12,7 @@ while (n<1 || n>8);
 
 for (int x = 0; x < n+1; x++)
 {
-    for (int i = 0; i<n+1-x; i++)
+    for (int i = 0; i<n-x; i++)
     {
         printf(" ");
     };
