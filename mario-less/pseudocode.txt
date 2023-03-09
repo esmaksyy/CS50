@@ -1,4 +1,4 @@
-get an integer input from the user
+prompt user for an integer input for height
 check if it is between 1 and 8(including 1 and 8)
 if not, take a step back and ask the user again. until you get a number between 1 and 8
 ıf the number you get is 1, create a digit, and insert a hash symbol
