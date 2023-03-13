@@ -2,26 +2,13 @@
 #include <stdio.h>
 
 int main(void)
-{int n;
-do{
-    n=get_int("Positive Number: ");
-}
-while (n<1 || n>8);
-for (int x = 0; x < n; x++)
 {
-    for (int i = 0; i<2*n-1-x; i++)
+    int height, row, column,  space;
+    do
     {
-        printf(" ");
-    };
-    for (int e =0; e<x+1; e++)
-    {
-         printf("#");
+        height = get_int ("Enter height here: ");
     }
-    printf("  ");
-    for (int e =0; e<x+1; e++)
-    {
-        printf("#");
-    }
-        printf("\n");
+    while (height < 1 || height > 8);
+
+    for (row = 0; row < height; row++)
 }
-};
