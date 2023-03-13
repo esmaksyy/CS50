@@ -23,5 +23,6 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
+    for (int u = 0; )
 };
 }
