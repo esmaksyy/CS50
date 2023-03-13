@@ -3,27 +3,27 @@
 
 int main(void)
 {
-    int height, row, column,  space;
+    int n;
     do
     {
-        height = get_int ("Enter height here: ");
+        n=get_int("Positive Number: ");
     }
-    while (height < 1 || height > 8);
-
-    for (row = 0; row < height; row++)
+    while (n<1 || n>8);
+    for (int x = 0; x < n; x++)
     {
-        for (space = 0; space < height - row - 1; space++)
-       {
-           printf(" ");
-       }
-       for (column = 0; column<= row; column++)
-       {
-           printf("#");
-       }
-       printf ("  ");
-       for (column = 0; column <=row; column++)
-       {
-           printf("#");
-       }
-       printf("\n");
-    }};
+    for (int i = 0; i<2*n-1-x; i++)
+    {
+        printf(" ");
+    };
+    for (int e =0; e<x+1; e++)
+    {
+         printf("#");
+    }
+    printf("  ");
+    for (int e =0; e<x+1; e++)
+    {
+        printf("#");
+    }
+        printf("\n");
+}
+};
