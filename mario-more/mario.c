@@ -23,7 +23,7 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
-    for (int u = 0; u < x+1; u++)
+    for (int u = 0; u < x-2 ; u++)
     {
         if (u == x-1)
         {
