@@ -23,6 +23,8 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
+
+};
 for (int x = 0; x < n; x++)
 {
     for (int i = 0; i>n-1-x; i++)
@@ -39,6 +41,6 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
-};
+
 };
 }
