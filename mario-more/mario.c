@@ -23,16 +23,18 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
-    for (int u = 0; u < x-2 ; u++)
+    for (int u = 0; u < x+1 ; u++)
     {
-        if (u == x-1)
+        for( int k = 0; k<n-1-x; k++)
         {
-            printf("..");
+            if (u == x)
+        {
+            printf(".");
         }
         else
         {
-            printf("#");
+            printf("z");
         }
-    }
+        }
 };
 }
