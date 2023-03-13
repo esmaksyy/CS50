@@ -16,12 +16,13 @@ for (int x = 0; x < n; x++)
     for (int e =0; e<x+1; e++)
     {
          printf("#");
-         printf("..");
-        for (int e =0; e<x+1; e++)
-        {
-             printf("#");
-        }
-         printf("\n");
+    }
+    printf("..");
+    for (int e =0; e<x+1; e++)
+    {
+        printf("#");
+    }
+        printf("\n");
         }
         else
         {
