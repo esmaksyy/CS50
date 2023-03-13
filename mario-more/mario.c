@@ -23,10 +23,6 @@ for (int x = 0; x < n; x++)
         printf("#");
     }
         printf("\n");
-        }
-        else
-        {
-            printf("#");};
-    };
+}
 };
 };
