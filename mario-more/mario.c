@@ -25,7 +25,7 @@ for (int x = 0; x < n; x++)
     };
     for (int u = 0; u < x+1 ; u++)
     {
-        for( int k = 0; k<n-1-x; k++)
+        for( int k = 0; k<x+1; k++)
         {
             if (u == x)
         {
@@ -33,7 +33,7 @@ for (int x = 0; x < n; x++)
         }
         else
         {
-            printf("#");
+            printf("z");
         }
         }
     }
