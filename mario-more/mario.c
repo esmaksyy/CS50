@@ -25,7 +25,7 @@ for (int x = 0; x < n; x++)
     };
     for (int u = 0; u < x+1; u++)
     {
-        if (u == x)
+        if (u == x-1)
         {
             printf("..");
         }
