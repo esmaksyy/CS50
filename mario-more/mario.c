@@ -25,8 +25,14 @@ for (int x = 0; x < n; x++)
     };
     for (int u = 0; u < x+1; u++)
     {
-        printf(".");
+        if (u == x)
+        {
+            printf("..");
+        }
+        else
+        {
+            printf("#");
+        }
     }
-    for ()
 };
 }
