@@ -23,6 +23,9 @@ for (int x = 0; x < n; x++)
         {
             printf("#");};
     };
-    for (int u = 0; u<)
+    for (int u = 0; u < x; u++)
+    {
+        printf("  ");
+    }
 };
 }
