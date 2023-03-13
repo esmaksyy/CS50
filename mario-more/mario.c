@@ -18,6 +18,7 @@ for (int x = 0; x < n; x++)
         if (e == x)
         {
             printf("#");
+            printf("..");
             printf("\n");
         }
         else
