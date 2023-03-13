@@ -17,7 +17,7 @@ for (int x = 0; x < n; x++)
     {
          printf("#");
     }
-    printf("..");
+    printf("  ");
     for (int e =0; e<x+1; e++)
     {
         printf("#");
