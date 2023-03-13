@@ -15,15 +15,13 @@ for (int x = 0; x < n; x++)
     };
     for (int e =0; e<x+1; e++)
     {
-        if (e == x)
+         printf("#");
+         printf("..");
+        for (int e =0; e<x+1; e++)
         {
-            printf("#");
-            printf("..");
-            for (int e =0; e<x+1; e++)
-            {
-                printf("#");
-            }
-            printf("\n");
+             printf("#");
+        }
+         printf("\n");
         }
         else
         {
