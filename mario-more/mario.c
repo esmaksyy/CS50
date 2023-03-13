@@ -21,9 +21,9 @@ int main(void)
            printf("#");
        }
        printf ("  ");
-       for (column = 0; column <=row; column++);
+       for (column = 0; column <=row; column++)
        {
            printf("#");
        }
        printf("\n");
-    }
+    }};
