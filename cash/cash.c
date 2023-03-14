@@ -38,12 +38,22 @@ int main(void)
 int get_cents(void)
 {
     // TODO
+    do
+    {
+        calculate_cents=get_int("Enter cents here: ");
+    }
+    while (calculate_cents>=0);
     return 0;
 }
 
 int calculate_quarters(int cents)
 {
     // TODO
+    do
+    {
+        calculate_quarters=get_int("Enter cents here: ");
+    }
+    while (calculate_quarters>=0);
     return 0;
 }
 
@@ -61,11 +71,21 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     // TODO
+    do
+    {
+        calculate_nickels=get_int("Enter cents here: ");
+    }
+    while (calculate_nickels>=0);
     return 0;
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
+    do
+    {
+        calculate_pennies=get_int("Enter cents here: ");
+    }
+    while (calculate_pennies>=0);
     return 0;
 }
