@@ -62,6 +62,11 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     // TODO
+    while (cents >= 10)
+    {
+        remainder++
+        cents = cents - 10;
+    }
     return 0;
 }
 
