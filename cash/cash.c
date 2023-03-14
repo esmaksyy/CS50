@@ -50,7 +50,6 @@ int get_cents(void)
 int calculate_quarters(int cents)
 {
     // TODO
-    quarters = quarters * 25;
     return 0;
 }
 
