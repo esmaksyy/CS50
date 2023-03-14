@@ -49,7 +49,7 @@ int get_cents(void)
 int calculate_quarters(int cents)
 {
     // TODO
-    quarters = c - quarters * 25;
+    quarters = quarters * 25;
     return 0;
 }
 
