@@ -44,7 +44,7 @@ int get_cents(void)
         cents = get_int("Enter cents here: ");
     }
     while (cents < 0);
-    return cents;
+ cents;
 }
 
 int calculate_quarters(int cents)
@@ -56,9 +56,8 @@ int calculate_quarters(int cents)
         remainder++;
         cents = cents - 25;
     }
-    return remainder;
+     remainder;
 }
-
 int calculate_dimes(int cents)
 {
     // TODO
@@ -68,7 +67,7 @@ int calculate_dimes(int cents)
         remainder++;
         cents = cents - 10;
     }
-    return remainder;
+     remainder;
 }
 
 int calculate_nickels(int cents)
@@ -80,7 +79,7 @@ int calculate_nickels(int cents)
         remainder++;
         cents = cents - 5;
     }
-    return remainder;
+     remainder;
 }
 
 int calculate_pennies(int cents)
@@ -92,5 +91,5 @@ int calculate_pennies(int cents)
         remainder++;
         cents = cents - 1;
     }
-    return remainder;
+    remainder;
 }
