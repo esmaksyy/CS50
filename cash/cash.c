@@ -40,7 +40,7 @@ int get_cents(void)
     // TODO
     do
     {
-        calculate_cents=get_int("Enter cents here: ");
+        get_cents=get_int("Enter cents here: ");
     }
     while (calculate_cents>=0);
     return 0;
