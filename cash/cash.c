@@ -40,10 +40,10 @@ int get_cents(void)
     // TODO
     do
     {
-        get_cents=get_int("Enter cents here: ");
+        cents=get_int("Enter cents here: ");
     }
-    while (calculate_cents>=0);
-    return 0;
+    while (cents>=0);
+    return cents;
 }
 
 int calculate_quarters(int cents)
