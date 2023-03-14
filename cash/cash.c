@@ -65,7 +65,7 @@ int calculate_dimes(int cents)
     int remainder = 0;
     while (cents >= 10)
     {
-        remainder++
+        remainder++;
         cents = cents - 10;
     }
     return remainder;
@@ -74,11 +74,23 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     // TODO
-    return 0;
+    int remainder = 0;
+    while (cents >= 5)
+    {
+        remainder++;
+        cents = cents - 5;
+    }
+    return remainder;
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
-    return 0;
+    int remainder = 0;
+    while (cents >= 1)
+    {
+        remainder++;
+        cents = cents - 1;
+    }
+    return remainder;
 }
