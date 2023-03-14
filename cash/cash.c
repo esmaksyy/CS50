@@ -52,7 +52,7 @@ int calculate_dimes(int cents)
     // TODO
     do
     {
-        calculate_dimes
+        calculate_dimes=get_int(")
     }
     return 0;
 }
