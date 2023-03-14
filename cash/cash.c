@@ -52,8 +52,9 @@ int calculate_dimes(int cents)
     // TODO
     do
     {
-        calculate_dimes=get_int(")
+        calculate_dimes=get_int("Enter cents here: ");
     }
+    while (calculate_dimes>=0)
     return 0;
 }
 
