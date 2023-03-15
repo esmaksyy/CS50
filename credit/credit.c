@@ -29,7 +29,7 @@ int main(void)
         printf("AMEX\n");
         return 0;
     }
-    else if(two_digit == 51 || two_digit == 52 || two_digit == 53 || two_digit == 54 || two_digit == 55 && digits == 16)
+    else if((two_digit == 51 || two_digit == 52 || two_digit == 53 || two_digit == 54 || two_digit == 55) && digits == 16)
     {
         printf("MASTERCARD\n");
         return 0;
@@ -40,7 +40,7 @@ int main(void)
         return 0;
     }
     else
-    printf("INVALID\n");
+        printf("INVALID\n");
     return 0;
 }
 
