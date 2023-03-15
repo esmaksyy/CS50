@@ -38,6 +38,7 @@ bool check_sum(long num)
             num /= 10;
         }
     }
+    printf("total: %i\n", total);
     if (total % 10 == 0)
         return true;
     return false;
