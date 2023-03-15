@@ -39,5 +39,6 @@ bool check_sum(long num)
         }
     }
     if (total % 10 == 0)
-    
+        return true;
+    return false;
 }
