@@ -65,7 +65,7 @@ bool check_sum(long num)
         {
             buffer = num % 10;
             buffer *= 2;
-            if (buffer > 10)
+            if (buffer >= 10)
             {
                 total += buffer %10;
                 total += buffer /10;
