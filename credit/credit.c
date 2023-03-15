@@ -3,6 +3,7 @@
 
 int main(void)
 {
-    int 
+    int get_long(void)
+    
 
 }
