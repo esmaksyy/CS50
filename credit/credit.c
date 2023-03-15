@@ -24,7 +24,7 @@ int main(void)
     printf("digits: %i\n", digits);
     printf("single_digit: %i\n", single_digit);
     printf("two_digit: %i\n", two_digit);
-    if (two_digit == 34 || two_digit == 37 && digits == 15)
+    if ((two_digit == 34 || two_digit == 37) && digits == 15)
     {
         printf("AMEX\n");
         return 0;
