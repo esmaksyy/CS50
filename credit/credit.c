@@ -13,7 +13,7 @@ int main(void)
         numbers /= 10;
         digits ++;
     }
-    printf("digits: %i", digits)
+    printf("digits: %i\n", digits);
 }
 
 bool check_sum(long num)
