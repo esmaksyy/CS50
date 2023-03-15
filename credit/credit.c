@@ -9,9 +9,9 @@ int get_long(void)
     do
     {
         numbers = get_long ("Enter numbers here: ");
-        digits = numbers%10^12
+        digits = numbers%10^
     }
-    while (numbers < 1000000000000 || numbers > 9999999999999999 || );
+    while (digits );
 
 
 }
