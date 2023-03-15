@@ -28,7 +28,7 @@ bool check_sum(long num)
             if (buffer > 10)
             {
                 total += buffer %10;
-                total += buffer /10
+                total += buffer /10;
             }
             else
             {
