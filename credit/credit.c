@@ -24,6 +24,17 @@ int main(void)
     printf("digits: %i\n", digits);
     printf("single_digit: %i\n", single_digit);
     printf("two_digit: %i\n", two_digit);
+    if (two_digit == 34 || two_digit == 37 && digits == 15)
+    {
+        printf("AMEX\n");
+        return 0;
+    }
+    else if(two_digit == 51 || two_digit == 52 || two_digit == 53 || two_digit == 54 || two_digit == 55 && digits == 16)
+    {
+        printf("MASTERCARD\n");
+        return 0;
+    }
+    else if
 }
 
 bool check_sum(long num)
