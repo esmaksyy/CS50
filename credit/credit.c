@@ -41,5 +41,6 @@ bool check_sum(long num)
     printf("total: %i\n", total);
     if (total % 10 == 0)
         return true;
+    print("INVALID\n")
     return false;
 }
