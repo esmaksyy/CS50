@@ -6,9 +6,13 @@ bool check_sum(long num);
 int main(void)
 {
     int digits = 0, single_digit =0, two_digit =0;
+    bool checksum
     long numbers = get_long("Enter the credit card number here: ");
     check_sum = check_sum(numbers);
-    if()
+    if(checksum == false)
+    {
+        return 1;
+    }
     while(numbers > 0)
     {
         if (numbers < 10)
