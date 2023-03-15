@@ -13,7 +13,7 @@ bool check_sum(long num)
 {
     int total = 0, buffer = 0;
     bool var = true;
-    while()
+    while(num > 0)
     {
         if (var == true)
         {
@@ -35,6 +35,7 @@ bool check_sum(long num)
                 total += buffer;
             }
             var = true;
+            num /= 10;
         }
     }
 }
