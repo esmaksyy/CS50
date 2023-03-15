@@ -11,7 +11,7 @@ int main(void)
 
 bool check_sum(long num)
 {
-    int total = 0;
+    int total = 0, buffer = 0;
     bool var = true;
     while()
     {
