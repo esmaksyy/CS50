@@ -7,7 +7,8 @@ int main(void)
 {
     int digits = 0, single_digit =0, two_digit =0;
     long numbers = get_long("Enter the credit card number here: ");
-    check_sum(numbers);
+    check_sum = check_sum(numbers);
+    if()
     while(numbers > 0)
     {
         if (numbers < 10)
