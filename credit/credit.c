@@ -5,8 +5,14 @@ bool check_sum(long num);
 
 int main(void)
 {
+    int digits = 0;
     long numbers = get_long("Enter the credit card number here: ");
     check_sum(numbers);
+    while(numbers > 0)
+    {
+        numbers /= 10;
+        digits ++;
+    }
 }
 
 bool check_sum(long num)
