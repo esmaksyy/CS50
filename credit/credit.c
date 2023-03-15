@@ -5,13 +5,19 @@ int main(void)
 int get_long(void)
 {
     int numbers;
-    int digits;
+    int digits = 0;
     do
     {
         numbers = get_long ("Enter numbers here: ");
-        digits = numbers%10^
+        for (numbers > 10 )
+        {
+            numbers = numbers%10
+            digits++
+        }
+
     }
-    while (digits );
+    while (digits != 13 || 15 || 16);
+
 
 
 }
