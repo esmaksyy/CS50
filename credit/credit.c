@@ -21,8 +21,8 @@ int main(void)
         numbers /= 10;
         digits ++;
     }
-    printf("sinle_digit: %i\n", sinle_digit);
     printf("digits: %i\n", digits);
+    printf("sinle_digit: %i\n", sinle_digit);
     printf("two_digit: %i\n", two_digit);
 }
 
