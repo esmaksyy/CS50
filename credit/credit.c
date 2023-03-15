@@ -6,8 +6,10 @@ bool check_sum(long num);
 int main(void)
 {
     long numbers = get_long("Enter the credit card number here: ");
+    check_sum(numbers);
+}
 
-
-
-
+bool check_sum(long num)
+{
+    
 }
