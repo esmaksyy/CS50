@@ -38,4 +38,6 @@ bool check_sum(long num)
             num /= 10;
         }
     }
+    if (total % 10 == 0)
+    
 }
