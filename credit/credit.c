@@ -22,7 +22,7 @@ int main(void)
         digits ++;
     }
     printf("digits: %i\n", digits);
-    printf("sinle_digit: %i\n", sinle_digit);
+    printf("single_digit: %i\n", single_digit);
     printf("two_digit: %i\n", two_digit);
 }
 
