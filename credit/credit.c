@@ -11,7 +11,7 @@ int main(void)
     check_sum = check_sum(numbers);
     if(checksum == false)
     {
-        return 1;
+        return 0;
     }
     while(numbers > 0)
     {
