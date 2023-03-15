@@ -10,6 +10,10 @@ int main(void)
     check_sum(numbers);
     while(numbers > 0)
     {
+        if {numbers < 10}
+        {
+            single_digit = numbers;
+        }
         numbers /= 10;
         digits ++;
     }
