@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int get_long(void);
     int numbers;
     int digits = 0;
     do
