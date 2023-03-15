@@ -21,7 +21,9 @@ int main(void)
         numbers /= 10;
         digits ++;
     }
+    printf("sinle_digit: %i\n", sinle_digit);
     printf("digits: %i\n", digits);
+    printf("two_digit: %i\n", two_digit);
 }
 
 bool check_sum(long num)
