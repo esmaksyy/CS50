@@ -17,7 +17,7 @@ bool check_sum(long num)
     {
         if (var == true)
         {
-            total = num % 10;
+            total += num % 10;
             num /= 10;
             var = false;
         }
