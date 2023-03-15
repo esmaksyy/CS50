@@ -34,6 +34,7 @@ bool check_sum(long num)
             {
                 total += buffer;
             }
+            var = true;
         }
     }
 }
