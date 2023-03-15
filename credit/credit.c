@@ -34,7 +34,14 @@ int main(void)
         printf("MASTERCARD\n");
         return 0;
     }
-    else if(single_digit == 4 || single_digit == 37 && digits == 15)
+    else if(single_digit == 4 && (digits == 13 || digits == 16))
+    {
+        printf("VISA\n");
+        return 0;
+    }
+    else
+    printf("INVALID\n");
+    return 0;
 }
 
 bool check_sum(long num)
