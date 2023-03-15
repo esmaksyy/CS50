@@ -9,7 +9,7 @@ int get_long(void)
     {
         numbers = get_long ("Enter numbers here: ");
     }
-    while ()
+    while (1000000000000)
 
 
 }
