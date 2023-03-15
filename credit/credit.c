@@ -34,7 +34,7 @@ int main(void)
         printf("MASTERCARD\n");
         return 0;
     }
-    else if
+    else if(single_digit == 4 || single_digit == 37 && digits == 15)
 }
 
 bool check_sum(long num)
