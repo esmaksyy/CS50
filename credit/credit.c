@@ -9,13 +9,6 @@ int main(void)
     {
         long numbers = get_long("Enter the credit card number here: ");
         for (numbers > 10)
-        {
-            numbers = numbers/10
-            digits++
-        }
-
-    }
-    while (digits != 13 || 15 || 16);
 
 
 
