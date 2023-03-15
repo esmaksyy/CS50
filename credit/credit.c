@@ -14,7 +14,7 @@ int main(void)
         {
             single_digit = numbers;
         }
-        if {numbers > 10 && numbers < 100}
+        if (numbers > 10 && numbers < 100)
         {
             two_digit = numbers;
         }
