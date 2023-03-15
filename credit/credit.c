@@ -4,7 +4,12 @@
 int main(void)
 int get_long(void)
 {
-    int
+    int numbers;
+    do
+    {
+        numbers = get_long ("Enter numbers here: ");
+    }
+    while ()
 
 
 }
