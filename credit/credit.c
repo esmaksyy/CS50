@@ -8,7 +8,7 @@ int main(void)
     do
     {
         int get_long;
-        numbers = get_long ("Enter numbers here: ");
+        numbers = int get_long("Enter numbers here: ");
         for (numbers > 10)
         {
             numbers = numbers/10
