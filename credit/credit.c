@@ -11,5 +11,30 @@ int main(void)
 
 bool check_sum(long num)
 {
-    
+    int total = 0;
+    bool var = true;
+    while()
+    {
+        if (var == true)
+        {
+            total = num % 10;
+            num /= 10;
+            var = false;
+        }
+        else
+        {
+            buffer = num % 10;
+            buffer *= 2;
+            if (buffer > 10)
+            {
+                total += buffer %10;
+                total += buffer /10
+            }
+            else
+            {
+                total += buffer;
+            }
+        }
+    }
+
 }
