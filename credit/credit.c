@@ -80,12 +80,7 @@ bool check_sum(long num)
     }
     printf("total: %i\n", total);
     if (total % 10 == 0)
-    {
         return true;
-        printf("INVALID\n");
-    }
-    else
-    {
-        return false;
-    }
+    printf("INVALID\n");
+    return false;
 }
