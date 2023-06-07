@@ -8,4 +8,8 @@ int main(void)
     //Prompt user for text
     string text = get_string("Text: ");
     printf("%s\n", text);
+
+    //Count the number of letters there are in the text
+    int letters = 0;
+    
 }
