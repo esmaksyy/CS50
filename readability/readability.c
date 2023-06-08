@@ -37,5 +37,6 @@ int main(void)
     printf("%i sentences\n", sentences);
 
     //Use Coleman-Liau index to determine the reading grade level
-    float calculation = (0.0588 * letters / words * 100) - (0.296 * sentences / words * 100)
+    float calculation = (0.0588 * letters / words * 100) - (0.296 * sentences / words * 100) - 15.8;
+    int index = round(calculation);
 }
