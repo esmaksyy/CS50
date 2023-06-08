@@ -25,7 +25,6 @@ int main(void)
         if(text[i] == ' ')
         words++;
     }
-    printf("%i words\n", words);
 
     //Count the number of sentences
     int sentences = 0;
