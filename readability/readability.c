@@ -32,5 +32,7 @@ int main(void)
     for(int i = 0; i < strlen(text); i++)
     {
         if(text[i] == '.' || text[i] == '!' || text[i] == '?')
+        sentences++;
     }
+    printf("%i sentences\n", sentences);
 }
