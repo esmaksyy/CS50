@@ -7,7 +7,6 @@ int main(void)
 {
     //Prompt user for text
     string text = get_string("Text: ");
-    printf("%s\n", text);
 
     //Count the number of letters there are in the text
     int letters = 0;
@@ -16,7 +15,6 @@ int main(void)
         if((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
         letters++;
     }
-    printf("%i letters\n", letters);
 
     //Count the number of words
     int words = 1;
