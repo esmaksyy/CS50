@@ -13,10 +13,17 @@ int main(void)
     int letters = 0;
     for(int i = 0; i < strlen(text); i++)
     {
-        if((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z')) letters++;
+        if((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
+        letters++;
     }
     printf("%i letters\n", letters);
 
     //Count the number of words
-    
+    int words = 1;
+    for(int i = 0; i < strlen(text); i++)
+    {
+        if(text[i] == ' ')
+        words++;
+    }
+    printf("%i words\n", words);
 }
