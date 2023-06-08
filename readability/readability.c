@@ -26,4 +26,8 @@ int main(void)
         words++;
     }
     printf("%i words\n", words);
+
+    //Count the number of sentences
+    int sentences = 0;
+    
 }
