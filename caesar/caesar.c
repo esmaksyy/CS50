@@ -45,5 +45,10 @@ int main(int argc, string argv[])
         {
             printf("%c", (((plaintext[i]-97)+k)%26)+97);
         }
+        else
+        {
+            printf("%c", plaintext[i]);
+        }
     }
+    
 }
