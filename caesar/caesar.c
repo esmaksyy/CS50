@@ -25,8 +25,7 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    printf("Success\n%s\n", key);
-
+    
     //Get plaintext from user
     string plaintext = get_string("plaintext: ");
 
@@ -50,5 +49,5 @@ int main(int argc, string argv[])
             printf("%c", plaintext[i]);
         }
     }
-    
+    printf("\n");
 }
