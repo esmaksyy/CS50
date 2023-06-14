@@ -31,4 +31,5 @@ int main(int argc, string argv[])
     string plaintext = get_string("plaintext: ");
 
     //Convert key to integer
+    int k = atoi(key);
 }
