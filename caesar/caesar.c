@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     string key = argv[1];
 
     //Check that the input is a digit
-    for (int i = 0; i < strlen (argv[1]); i++)
+    for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (!isdigit(argv[1][i]))
         {
@@ -25,7 +25,7 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    
+
     //Get plaintext from user
     string plaintext = get_string("plaintext: ");
 
