@@ -28,4 +28,6 @@ int main(int argc, string argv[])
 
     //Get plaintext from user
     string plaintext = get_string("plaintext: ");
+
+    //Convert key to integer
 }
