@@ -15,5 +15,7 @@ int main(int argc, string argv[])
     //Define the key
     string key = argv[1];
 
-    //Check that the input is a dijit
+    //Check that the input is a digit
+    for (int i = 0; i < strlen (argv[1]); i++)
+    if (isdigit(argv[1][i]));
 }
