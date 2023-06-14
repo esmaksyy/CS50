@@ -32,4 +32,8 @@ int main(int argc, string argv[])
 
     //Convert key to integer
     int k = atoi(key);
+    printf("ciphertext: ");
+
+    //Obtain ciphertext
+    
 }
