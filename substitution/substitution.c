@@ -45,4 +45,6 @@ int main(int argc, string argv[])
 
     //Prompt the user for the plaintext
     string plaintext = get_string("plaintext: ");
+
+    //Convert all alphabets in the key to uppercase
 }
