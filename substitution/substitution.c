@@ -29,4 +29,15 @@ int main(int argc, string argv[])
         printf ("Key must contain 26 characters.\n");
         return 1;
     }
+
+    //Validate that each alphabet in the key is unique
+    for (int i = 0; i < strlen(key); i++)
+    {
+        for (int j = i + 1; j < strlen(key); j++)
+        {
+            if (toupper(key[i]) == toupper(key[j]))
+            printf("Usage: ./substitution key\n");
+            return 1;
+        }
+    }
 }
