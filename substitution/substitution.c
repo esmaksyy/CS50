@@ -58,5 +58,17 @@ int main(int argc, string argv[])
     //Print the ciphertext
     printf("ciphertext: ");
 
-    for
+    for (int i = 0; i < strlen(plaintext); i++)
+    {
+        if (isupper(plaintext[i]))
+        {
+            int letter = plaintext[i] - 65;
+            printf("%c", key[letter]);
+        }
+        else if (islower(plaintext[i]))
+        {
+            int letter = plaintext[i] - 97;
+            printf("%c", key[letter] + 32);
+        }
+    }
 }
