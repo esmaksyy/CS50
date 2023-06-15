@@ -70,5 +70,7 @@ int main(int argc, string argv[])
             int letter = plaintext[i] - 97;
             printf("%c", key[letter] + 32);
         }
+        else
+        printf("%c", plaintext[i]);
     }
 }
