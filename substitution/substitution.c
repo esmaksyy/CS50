@@ -18,7 +18,7 @@ int main(int argc, string argv[])
     {
         if (!isalpha(key[i]))
         {
-            printf ("Usage: ./substitution key\n");
+            printf("Usage: ./substitution key\n");
             return 1;
         }
     }
@@ -26,7 +26,7 @@ int main(int argc, string argv[])
     //Validate that the key consists of 26 characters
     if (strlen(key) != 26)
     {
-        printf ("Key must contain 26 characters.\n");
+        printf("Key must contain 26 characters.\n");
         return 1;
     }
 
