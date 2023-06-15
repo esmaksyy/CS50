@@ -57,4 +57,6 @@ int main(int argc, string argv[])
 
     //Print the ciphertext
     printf("ciphertext: ");
+
+    for
 }
