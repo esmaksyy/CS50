@@ -51,7 +51,10 @@ int main(int argc, string argv[])
     {
         if (islower(key[i]))
         {
-            
+            key[i] = key[i] - 32;
         }
     }
+
+    //Print the ciphertext
+    printf("ciphertext: ");
 }
