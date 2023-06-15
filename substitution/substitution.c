@@ -73,4 +73,5 @@ int main(int argc, string argv[])
         else
         printf("%c", plaintext[i]);
     }
+    printf("\n");
 }
