@@ -4,7 +4,7 @@ How do you know?: TODO
 
 sort2 uses: Merge Sort
 
-How do you know?: Merge search
+How do you know?: Merge search in Big O shoul
 
 sort3 uses: TODO
 
