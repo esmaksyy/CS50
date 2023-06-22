@@ -4,7 +4,7 @@ How do you know?: TODO
 
 sort2 uses: Merge Sort
 
-How do you know?: Merge search in Big O shoul
+How do you know?: Merge search in Big O should be the fast. That's why when ı used random10000.txt file, sort1 sorted in 0.297 seconds, sort2 in 0.085 and sort3 in 0.191 seconds. So since the fastest file is sort2, the sort2 file should be merge sort.
 
 sort3 uses: TODO
 
