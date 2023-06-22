@@ -8,4 +8,4 @@ How do you know?: Merge search in Big O should be the fast. That's why when ı u
 
 sort3 uses: Selection Sort
 
-How do you know?: TODO
+How do you know?: During my tests on datasets with random arrangements, I observed that the "Sort 2" code exhibits characteristics of merge sorting. The "Sort 3" code is a selection sort because when tested on a dataset with the most orderly arrangement, it takes the longest time to perform the sorting operation, which is proportional to the square of 'n'. Hence, the comparison results between "Sort 1" and "Sort 3" (Sort 1: 0.526s, Sort 3: 0.857s) have shown this.
