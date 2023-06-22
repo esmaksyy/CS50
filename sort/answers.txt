@@ -1,6 +1,6 @@
 sort1 uses: Bubble Sort
 
-How do you know?: 
+How do you know?: During my tests on datasets with random arrangements, I observed that the "Sort 2" code exhibits characteristics of merge sorting. The "Sort 1" code is a bubble sort because when tested on a dataset with the most orderly arrangement, it takes the shortest time to perform the sorting operation, which is proportional of 'n'. Hence, the comparison results between "Sort 1" and "Sort 3" (Sort 1: 0.526s, Sort 3: 0.857s) have shown this.
 
 sort2 uses: Merge Sort
 
