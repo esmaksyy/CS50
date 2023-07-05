@@ -83,5 +83,14 @@ void print_winner(void)
 {
     // TODO
     int maximum_vote = 0;
+
+    //Determine the highest number of votes
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > maximum_vote)
+        {
+            maximum_vote = candidates[i].votes;
+        }
+    }
     return;
 }
