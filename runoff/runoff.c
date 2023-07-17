@@ -199,6 +199,14 @@ bool is_tie(int min)
         {
             eliminate++;
         }
+        if (candidates[i].votes == min)
+        {
+            counter++;
+        }
+    }
+    if (eliminate == counter)
+    {
+        return true;
     }
     return false;
 }
