@@ -163,7 +163,7 @@ void sort_pairs(void)
         }
     }
     // Swap strongest win with current index
-    
+    pair temp = pairs[min_idx];
     return;
 }
 
