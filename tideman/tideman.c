@@ -152,7 +152,7 @@ void sort_pairs(void)
     {
         int min_weight = pair_weight(i);
         int min_idx = i;
-        for(int j = )
+        for(int j = i-1; j >= 0)
     }
     return;
 }
