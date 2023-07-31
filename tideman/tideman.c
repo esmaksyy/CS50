@@ -16,7 +16,7 @@ typedef struct
 {
     int winner;
     int loser;
-}pair;
+} pair;
 
 // Array of candidates
 string candidates[MAX];
@@ -115,9 +115,9 @@ bool vote(int rank, string name, int ranks[])
 void record_preferences(int ranks[])
 {
     // TODO
-    for(int rank = 0; rank < candidate_count; rank++)
+    for (int rank = 0; rank < candidate_count; rank++)
     {
-        for(int col = rank+1; col < candidate_count; col++)
+        for (int col = rank + 1; col < candidate_count; col++)
         {
             preferences[ranks[rank]][ranks[col]] += 1;
         }
@@ -129,11 +129,11 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
-        for(int j = 0; j < candidate_count; j++)
+        for (int j = 0; j < candidate_count; j++)
         {
-            if(preferences[i][j] > preferences[j][i])
+            if (preferences[i][j] > preferences[j][i])
             {
                 pair new_pair = {i, j};
                 pairs[pair_count] = new_pair;
@@ -156,35 +156,35 @@ void sort_pairs(void)
 {
     // TODO
     // Reverse Selection Sort so we have descending order
-    for(int i = pair_count - 1; i >= 0; i--)
+    for (int i = pair_count - 1; i >= 0; i--)
     {
         int min_weight = pair_weight(i);
         int min_idx = i;
-        for(int j = i-1; j >= 0; j--)
+        for (int j = i - 1; j >= 0; j--)
         {
-            if(pair_weight(j) < min_weight)
+            if (pair_weight(j) < min_weight)
             {
-               min_weight = pair_weight(j);
-               min_idx = j;
+                min_weight = pair_weight(j);
+                min_idx = j;
             }
         }
-    // Swap strongest win with current index
-    pair temp = pairs[min_idx];
-    pairs[min_idx] = pairs[i];
-    pairs[i] = temp;
+        // Swap strongest win with current index
+        pair temp = pairs[min_idx];
+        pairs[min_idx] = pairs[i];
+        pairs[i] = temp;
     }
     return;
 }
 
 bool has_cycle(int winner, int loser)
 {
-    if(locked[loser][winner] == true)
+    if (locked[loser][winner] == true)
     {
         return true;
     }
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
-        if(locked[loser][i] == true && has_cycle(winner, i))
+        if (locked[loser][i] == true && has_cycle(winner, i))
         {
             return true;
         }
@@ -196,11 +196,11 @@ bool has_cycle(int winner, int loser)
 void lock_pairs(void)
 {
     // TODO
-    for(int i = 0; i < pair_count; i++)
+    for (int i = 0; i < pair_count; i++)
     {
         int winner = pairs[i].winner;
         int loser = pairs[i].loser;
-        if(!has_cycle(winner, loser))
+        if (!has_cycle(winner, loser))
         {
             locked[winner][loser] = true;
         }
@@ -212,7 +212,7 @@ void lock_pairs(void)
 void print_winner(void)
 {
     // TODO
-    for(int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         bool is_banana = true;
 
@@ -225,7 +225,7 @@ void print_winner(void)
             }
         }
 
-        if(is_banana)
+        if (is_banana)
         {
             printf("%s\n", candidates[i]);
             return;
