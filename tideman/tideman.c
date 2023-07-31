@@ -169,6 +169,8 @@ void sort_pairs(void)
     return;
 }
 
+bool has_cycle(int winner, int loser)
+
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
