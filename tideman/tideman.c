@@ -156,10 +156,12 @@ void sort_pairs(void)
         {
             if(pair_weight(j) < min_weight)
             {
-                
+               min_weight = pair_weight(j);
+               min_idx = j;
             }
         }
     }
+    
     return;
 }
 
