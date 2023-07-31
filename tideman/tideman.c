@@ -152,7 +152,7 @@ void sort_pairs(void)
     // Reverse Selection Sort so we have descending order
     for(int i = pair_count - 1; i >= 0; i--)
     {
-        int min_weight = pair_weight(i);
+        int min_weight = pair_weight[i];
         int min_idx = i;
         for(int j = i-1; j >= 0; j--)
         {
