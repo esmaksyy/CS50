@@ -178,6 +178,9 @@ bool has_cycle(int winner, int loser)
     for(int i = 0; i < candidate_count; i++)
     {
         if(locked[loser][i] == true && has_cycle(winner, i))
+        {
+            
+        }
     }
 }
 
