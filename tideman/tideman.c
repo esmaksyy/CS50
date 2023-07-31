@@ -213,19 +213,6 @@ void lock_pairs(void)
 void print_winner(void)
 {
     // TODO
-    for(int row = 0; row < candidate_count; row++)
-    {
-        for(int col = 0; col < candidate_count; col++)
-        {
-            if(locked[row][col] == true)
-            {
-                break;
-            }
-            else if(col == candidate_count - 1)
-            {
-                printf("%s", candidates[row]);
-            }
-        }
-    }
+    for(int i = 0; i < candidate_count; i++)
     return;
 }
