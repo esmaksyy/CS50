@@ -149,6 +149,11 @@ void sort_pairs(void)
 {
     // TODO
     for(int i = pair_count - 1; i >= 0; i--)
+    {
+        int min_weight = pair_weight(i);
+        int min_idx = i;
+        for(int j = )
+    }
     return;
 }
 
