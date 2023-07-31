@@ -145,6 +145,13 @@ void add_pairs(void)
     return;
 }
 
+int pair_weight(i)
+{
+    int pair_winner = pairs[i].winner;
+    int pair_loser = pairs[i].loser;
+    return preferences[pair_winner][pair_loser];
+}
+
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
