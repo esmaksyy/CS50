@@ -179,9 +179,10 @@ bool has_cycle(int winner, int loser)
     {
         if(locked[loser][i] == true && has_cycle(winner, i))
         {
-            
+            return true;
         }
     }
+    return false;
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
