@@ -225,6 +225,14 @@ void eliminate(int min)
     }
     return;
 }
+
+
+
+
+
+
+
+
     for(int row = 0; row < candidate_count; row++)
     {
         for(int col = 0; col < candidate_count; col++)
