@@ -164,6 +164,8 @@ void sort_pairs(void)
     }
     // Swap strongest win with current index
     pair temp = pairs[min_idx];
+    pairs[min_idx] = pairs[i];
+    pairs[i] = temp;
     return;
 }
 
