@@ -9,7 +9,9 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
         {
             if(image[column][row].rhbtBlue == 0 && image[column][row].rhbtGreen == 0 && image[column][row].rhbtRed == 0)
             {
-                image[column][row].rhbtBlue = 
+                image[column][row].rhbtBlue = 80;
+                image[column][row].rhbtGreen = 45;
+                image[column][row].rhbtRed = 
             }
         }
     }
