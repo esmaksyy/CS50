@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 
     // TODO: Copy header from input file to output file
     unit8_t factor = atof(argv[3]);
+    fread(header, sizeof(unit8_t), HEADER_SIZE, input);
 
     // TODO: Read samples from input file and write updated data to output file
 
