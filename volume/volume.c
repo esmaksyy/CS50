@@ -42,7 +42,8 @@ int main(int argc, char *argv[])
     int16_t sample;
     while (fread(&sample, sizeof(int16_t), 1, input) == 1)
     {
-        
+        sample *= factor;
+        fwrite(&sample, sizeof(int16_t), 1, output);
     }
 
     // Close files
