@@ -7,11 +7,11 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
     {
         for(int column = 0; column < height; column++)
         {
-            if(image[column][row].rhbtBlue == 0 && image[column][row].rhbtGreen == 0 && image[column][row].rhbtRed == 0)
+            if(image[column][row].rgbtBlue == 0 && image[column][row].rgbtGreen == 0 && image[column][row].rgbtRed == 0)
             {
-                image[column][row].rhbtBlue = 80;
-                image[column][row].rhbtGreen = 45;
-                image[column][row].rhbtRed = 145;
+                image[column][row].rgbtBlue = 80;
+                image[column][row].rgbtGreen = 45;
+                image[column][row].rgbtRed = 145;
             }
         }
     }
