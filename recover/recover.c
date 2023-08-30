@@ -14,5 +14,10 @@ int main(int argc, char *argv[])
     FILE *input_file = fopen(argv[1], "r");
 
     // Check that the input_file is valid
+    if (input_file == NULL)
+    {
+        printf("Could not open file");
+        return 2;
+    }
 
 }
