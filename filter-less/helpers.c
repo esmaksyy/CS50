@@ -27,6 +27,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     // Comb through each row
+    for (int i = 0; i < height; i++)
+    {
+        // Comb through each column
+    }
     return;
 }
 
