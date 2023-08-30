@@ -20,4 +20,15 @@ int main(int argc, char *argv[])
         return 2;
     }
 
+    // Store blocks of 512 bytes in an array
+    unsigned char buffer[512];
+
+    // Track number of images generated
+    int count_image = 0;
+
+    // File pointer for recovered images
+    FILE *output_file = NULL;
+
+    // char filename[8]
+    char *filename = malloc(8 * sizeof(char));
 }
