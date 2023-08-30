@@ -36,6 +36,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             float orijinalRed = image[i][j].rgbtRed;
             float orijinalGreen = image[i][j].rgbtGreen;
             float orijinalBlue = image[i][j].rgbtBlue;
+
+            // Find the updated pixel value
+            int sepiaRed = round(0.393 * orijinalRed + 0.769 * orijinalGreen + 0.189)
         }
     }
     return;
