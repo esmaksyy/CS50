@@ -50,6 +50,9 @@ int main(int argc, char *argv[])
             count_image++;
         }
         // Check if output has been used for valid input
-        if
+        if (output_file != NULL)
+        {
+            fwrite(buffer, sizeof(char), 512, output_file);
+        }
     }
 }
