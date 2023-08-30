@@ -41,6 +41,8 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             int sepiaRed = round(0.393 * orijinalRed + 0.769 * orijinalGreen + 0.189 * orijinalBlue);
             int sepiaGreen = round(0.349 * orijinalRed + 0.686 * orijinalGreen + 0.168 * orijinalBlue);
             int sepiaBlue = round(0.272 * orijinalRed + 0.534 * orijinalGreen + 0.131 * orijinalBlue);
+
+            // Update the pixel 
         }
     }
     return;
