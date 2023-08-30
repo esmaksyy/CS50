@@ -112,7 +112,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     int currentY = j + y;
 
                     // Check if neighbouring pixel is valid
-                    if (currentX < 0 )
+                    if (currentX < 0 || currentX > (height - 1) || currentY < 0 || currentY > (width - 1))
+                    {
+                        continue;
+                    }
+
+                    // Get image value
+                    totalRed
                 }
             }
         }
