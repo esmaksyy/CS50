@@ -60,7 +60,8 @@ int main(int argc, char *argv[])
             fwrite(buffer, sizeof(char), 512, output_file);
         }
     }
-    Close the last output_file, if open
+
+    // Close the last output_file, if open
     if (output_file != NULL)
     {
         fclose(output_file);
