@@ -40,6 +40,11 @@ int main(int argc, char *argv[])
         // Check if bytes indicate start of JPEG
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
+            // Close the previous output_file, if open
+            if (output_file != NULL)
+            {
+                fclose(output_file);
+            }
             // Write the JPEG filenames
             sprintf(filename, "%03i.jpg", count_image);
 
