@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
             sprintf(filename, "%03i.jpg", count_image);
 
             // Open output_file for writing
-            output_file = fopen(filename, "w");
+            output_file = fopen(filename, "a");
 
             // Count number of images found
             count_image++;
