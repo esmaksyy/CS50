@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     // Check that the input_file is valid
     if (input_file == NULL)
     {
-        printf("Could not open file");
+        printf("Could not open file\n");
         return 2;
     }
 
