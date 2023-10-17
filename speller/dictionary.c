@@ -26,7 +26,9 @@ node *table[N];
 // Declare variables
 unsigned int word_count = 0;
 unsigned int hash(const char *word)
-
+{
+    unsigned int hash(const char *word)
+}
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
