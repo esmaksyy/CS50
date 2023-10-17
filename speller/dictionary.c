@@ -24,7 +24,7 @@ const unsigned int N = 26;
 node *table[N];
 
 // Declare variables
-unsigned int word_count;
+unsigned int word_count = 0;
 unsigned int hash_value;
 
 // Returns true if word is in dictionary, else false
