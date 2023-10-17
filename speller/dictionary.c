@@ -29,7 +29,8 @@ unsigned int word_count = 0;
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    unsigned int hash(const char *word)
+    unsigned int hash = 0;
+    for (int i = 0; word)
 }
 
 // Returns true if word is in dictionary, else false
