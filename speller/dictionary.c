@@ -121,10 +121,6 @@ bool unload(void)
             cursor = cursor->next;
             free(tmp);
         }
-        if (cursor == NULL)
-        {
-            return true;
-        }
     }
-    return false;
+    return true;
 }
