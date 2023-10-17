@@ -92,7 +92,6 @@ bool load(const char *dictionary)
         table[hash_value] = n;
         word_count++;
     }
-    free(node);
     fclose(file);
     return true;
 }
