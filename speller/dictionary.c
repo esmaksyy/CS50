@@ -46,6 +46,8 @@ bool load(const char *dictionary)
         printf("Unable to open %s\n", dictionary);
         return false;
     }
+    // Declare variable called world
+    Char word[LENGTH+1];
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
