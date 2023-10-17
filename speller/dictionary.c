@@ -91,9 +91,9 @@ bool load(const char *dictionary)
         n->next = table[hash_value];
         table[hash_value] = n;
         word_count++;
+        free(node);
     }
     fclose(file);
-    free(node);
     return true;
 }
 
