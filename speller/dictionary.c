@@ -30,7 +30,7 @@ unsigned int word_count = 0;
 unsigned int hash(const char *word)
 {
     unsigned int hash = 0;
-    for (int i = 0; word)
+    for (int i = 0; word[i] != 0 )
 }
 
 // Returns true if word is in dictionary, else false
