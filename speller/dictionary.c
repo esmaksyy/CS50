@@ -1,12 +1,11 @@
 // Implements a dictionary's functionality
-
+#include "dictionary.h"
 #include <ctype.h>
 #include <stdbool.h>
-#include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <strings.h>
-#include "dictionary.h"
 
 #include "dictionary.h"
 
@@ -15,8 +14,7 @@ typedef struct node
 {
     char word[LENGTH + 1];
     struct node *next;
-}
-node;
+} node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
@@ -73,10 +71,10 @@ bool load(const char *dictionary)
         return false;
     }
     // Declare variable called world
-    char word[LENGTH+1];
+    char word[LENGTH + 1];
 
     // Scan dictionary for strings up until EOF
-    while (fscanf(file, "%s", word) !=EOF )
+    while (fscanf(file, "%s", word) != EOF)
     {
         // Allocate memory for new node
         node *n = malloc(sizeof(node));

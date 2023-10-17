@@ -1,6 +1,8 @@
 {
     "gitdoc.enabled": true,
     "files.associations": {
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "stdbool.h": "c",
+        "strings.h": "c"
     }
 }
