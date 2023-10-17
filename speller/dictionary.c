@@ -72,7 +72,7 @@ bool load(const char *dictionary)
         return false;
     }
     // Declare variable called world
-    Char word[LENGTH+1];
+    char word[LENGTH+1];
 
     // Scan dictionary for strings up until EOF
     while (fscanf(file, "%s", word) !=EOF )
@@ -111,7 +111,7 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    for (int i = 0; i < N; İ++)
+    for (int i = 0; i < N; i++)
     {
         node *cursor = table[i];
         while (cursor)
