@@ -111,5 +111,19 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    for (int i = 0; i < N; İ++)
+    {
+        node *cursor = table[i];
+        while (cursor)
+        {
+            node *tmp = cursor;
+            cursor = cursor->next;
+            free(tmp);
+        }
+        if (cursor == NULL)
+        {
+            return true;
+        }
+    }
     return false;
 }
