@@ -25,6 +25,8 @@ node *table[N];
 
 // Declare variables
 unsigned int word_count = 0;
+
+// Hashes word to a number
 unsigned int hash(const char *word)
 {
     unsigned int hash(const char *word)
