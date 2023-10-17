@@ -48,6 +48,19 @@ bool load(const char *dictionary)
     }
     // Declare variable called world
     Char word[LENGTH+1];
+
+    // Scan dictionary for strings up until EOF
+    while (fscanf(file, "%s", word) !=EOF )
+    {
+        // Allocate memory for new node
+        node *n = malloc(sizeof(node));
+
+        // If malloc returns NULL, return false
+        if (n == NULL)
+        {
+            return false;
+        }
+    }
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
