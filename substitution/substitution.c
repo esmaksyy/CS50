@@ -1,18 +1,18 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 int main(int argc, string argv[])
 {
-    //Check that there is one command-line argument
+    // Check that there is one command-line argument
     if (argc != 2)
     {
         printf("Usage: ./substitution key \n");
         return 1;
     }
 
-    //Validate that the key consists only of alphabets
+    // Validate that the key consists only of alphabets
     string key = argv[1];
     for (int i = 0; i < strlen(key); i++)
     {
@@ -23,14 +23,14 @@ int main(int argc, string argv[])
         }
     }
 
-    //Validate that the key consists of 26 characters
+    // Validate that the key consists of 26 characters
     if (strlen(key) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
     }
 
-    //Validate that each alphabet in the key is unique
+    // Validate that each alphabet in the key is unique
     for (int i = 0; i < strlen(key); i++)
     {
         for (int j = i + 1; j < strlen(key); j++)
@@ -43,10 +43,10 @@ int main(int argc, string argv[])
         }
     }
 
-    //Prompt the user for the plaintext
+    // Prompt the user for the plaintext
     string plaintext = get_string("plaintext: ");
 
-    //Convert all alphabets in the key to uppercase
+    // Convert all alphabets in the key to uppercase
     for (int i = 0; i < strlen(key); i++)
     {
         if (islower(key[i]))
@@ -55,7 +55,7 @@ int main(int argc, string argv[])
         }
     }
 
-    //Print the ciphertext
+    // Print the ciphertext
     printf("ciphertext: ");
 
     for (int i = 0; i < strlen(plaintext); i++)
@@ -71,7 +71,7 @@ int main(int argc, string argv[])
             printf("%c", key[letter] + 32);
         }
         else
-        printf("%c", plaintext[i]);
+            printf("%c", plaintext[i]);
     }
     printf("\n");
 }

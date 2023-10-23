@@ -3,6 +3,8 @@
     "files.associations": {
         "stdint.h": "c",
         "stdbool.h": "c",
-        "strings.h": "c"
+        "strings.h": "c",
+        "cs50.h": "c",
+        "string.h": "c"
     }
 }
