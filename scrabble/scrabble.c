@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -32,7 +32,7 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int score = 0;
 
-    //Compute score for each character
+    // Compute score for each character
     int len = strlen(word);
     for (int i = 0; i < len; i++)
     {
