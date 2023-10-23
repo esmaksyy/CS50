@@ -3,7 +3,14 @@
 
 int main(void)
 {
+    int start, end, years = 0;
     // TODO: Prompt for start size
+    do
+    {
+        printf("Enter starting population size: ");
+        scanf("%d", &start);
+    }
+    while (start < 9);
 
     // TODO: Prompt for end size
 
