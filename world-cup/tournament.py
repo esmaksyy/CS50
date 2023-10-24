@@ -35,7 +35,6 @@ def main():
                 counts[winner] = 1
 
         # Calculate elapsed
-
         elapsed_time = time.time() - start_time
 
         # Print each team's chances of winning, according to simulation
