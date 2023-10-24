@@ -23,8 +23,9 @@ def main():
         for row in reader:
             teams.append({
                 "team": row["team"],
-                "rating": int(row["rating])
+                "rating": int(row["rating"])
             })
+            
     for n in N:
         counts = {}
         start_time = time.time() # Start the timer
