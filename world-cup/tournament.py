@@ -26,8 +26,10 @@ def main():
                 "team": row["team"],
                 "rating": int(row["rating"])
             })
-
-    counts = {}
+    for n in N:
+        # Timer
+        start time = time.time()
+        counts = {}
     # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
     for i in range(N):
         winner = simulate_tournament(teams)
