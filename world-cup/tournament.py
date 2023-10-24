@@ -3,6 +3,7 @@
 import csv
 import sys
 import random
+import time
 
 # Number of simluations to run
 n = 1000000
