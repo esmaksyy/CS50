@@ -21,8 +21,10 @@ def main():
     with open(filename) as f:
         reader = csv.DictReader(f)
         for row in reader:
-            team["rating"] = int(team["rating"])
-            teams.append(team)
+            teams.append({
+                "team": row["team"],
+                "rating": int(row["rating])
+            })
     for n in N:
         counts = {}
         start_time = time.time() # Start the timer
