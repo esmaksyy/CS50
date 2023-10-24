@@ -10,15 +10,15 @@ N = [10, 100, 1000, 10000, 100000, 1000000]
 
 
 def main():
-
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    teams = []
-    filename = sys.argv[1]
 
+    filename = sys.argv[1]
     teams = []
+
+    
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     with open(filename) as f:
         reader = csv.DictReader(f)
