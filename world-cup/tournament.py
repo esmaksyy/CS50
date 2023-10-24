@@ -39,16 +39,16 @@ def main():
             else:
                 counts[winner] = 1
 
-     # Calculate elapesed time
-     elapsed time = time.time() - start_time
+    # Calculate elapesed time
+    elapsed_time = time.time() - start_time
 
-        # Print each team's chances of winning, according to simulation
-        for team in sorted(counts, key=lambda team: counts[team], reverse=True):
-            print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
+    # Print each team's chances of winning, according to simulation
+    for team in sorted(counts, key=lambda team: counts[team], reverse=True):
+        print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
-        # Printf time taken
-        print(f"Elapsed time: (elapsed_time: .3f)s")
-        print()
+    # Printf time taken
+    print(f"Elapsed time: (elapsed_time: .3f)s")
+    print()
 
 
 def simulate_game(team1, team2):
