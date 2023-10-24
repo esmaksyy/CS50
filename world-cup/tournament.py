@@ -18,7 +18,7 @@ def main():
     filename = sys.argv[1]
     teams = []
 
-    
+
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     with open(filename) as f:
         reader = csv.DictReader(f)
@@ -27,6 +27,7 @@ def main():
                 "team": row["team"],
                 "rating": int(row["rating"])
             })
+
 
     for n in N:
         # Timer
