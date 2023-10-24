@@ -34,7 +34,7 @@ def main():
         start_time = time.time()
         counts = {}
 
-        
+
         # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
         for i in range(n):
             winner = simulate_tournament(teams)
@@ -43,7 +43,7 @@ def main():
             else:
                 counts[winner] = 1
 
-        # Calculate elapesed time
+        # Calculate elapsed time
         elapsed_time = time.time() - start_time
 
         # Print each team's chances of winning, according to simulation
