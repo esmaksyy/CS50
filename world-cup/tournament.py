@@ -25,7 +25,7 @@ def main():
                 "team": row["team"],
                 "rating": int(row["rating"])
             })
-            
+
     for n in N:
         counts = {}
         start_time = time.time() # Start the timer
@@ -77,7 +77,7 @@ def simulate_tournament(teams):
     # TODO # Simulate rounds until there is only one team left # Return the name of the winning team
     while len(teams) > 1:
         teams = simulate_round(teams)
-    return teams[0]
+    return teams[0]["team"]
 
 
 if __name__ == "__main__":
