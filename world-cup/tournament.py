@@ -46,7 +46,7 @@ def main():
             print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
         # Printf time taken
-        print(f"Elpased time: )
+        print(f"Elapsed time: )
 
 
 
