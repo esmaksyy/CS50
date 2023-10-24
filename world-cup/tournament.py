@@ -6,9 +6,10 @@ import random
 import time
 
 # Number of simluations to run
-n = 1000000
+N = [10, 100, 1000, 10000, 100000, 1000000]
 
 def main():
+
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
@@ -17,9 +18,9 @@ def main():
     filename = sys.argv[1]
 
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
-    with open(filename) as file:
-        reader = csv.DictReader(file)
-        for team in reader:
+    with open(filename) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
             team["rating"] = int(team["rating"])
             teams.append(team)
     for n in N:
