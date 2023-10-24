@@ -22,30 +22,29 @@ def main():
         for team in reader:
             team["rating"] = int(team["rating"])
             teams.append(team)
+    for n in N:
+        counts = {}
+        start_time = time.time() # Start the timer
 
-    counts = {}
+        # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
+        for i in range(n):
+            winner = simulate_tournament(teams)
+            if winner in counts:
+                counts[winner] += 1
+            else:
+                counts[winner] = 1
 
-    start_time = time.time() # Start the timer
+        # Calculate elapsed
 
-    # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
-    for i in range(n):
-        winner = simulate_tournament(teams)
-        if winner in counts:
-            counts[winner] += 1
-        else:
-            counts[winner] = 1
+        elapsed_time = time.time() - start_time
 
-    # Calculate elapsed
+        # Print each team's chances of winning, according to simulation
+        for team in sorted(counts, key=lambda team: counts[team], reverse=True):
+            print(f"{team}: {counts[team] * 100 / n:.1f}% chance of winning")
 
-    elapsed_time = time.time() - start_time
-
-    # Print each team's chances of winning, according to simulation
-    for team in sorted(counts, key=lambda team: counts[team], reverse=True):
-        print(f"{team}: {counts[team] * 100 / n:.1f}% chance of winning")
-
-    # Printf time taken
-    print(f"Elapsed time for (n) simulations: {elapsed_time: .3f}s")
-    print()
+        # Printf time taken
+        print(f"Elapsed time for (n) simulations: {elapsed_time: .3f}s")
+        print()
 
 
 def simulate_game(team1, team2):
