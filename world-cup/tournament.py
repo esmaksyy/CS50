@@ -45,6 +45,7 @@ def main():
         for team in sorted(counts, key=lambda team: counts[team], reverse=True):
             print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
+        # Printf time taken
 
 
 
