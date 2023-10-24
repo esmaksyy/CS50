@@ -35,10 +35,10 @@ def main():
         else:
             counts[winner] = 1
 
-    end_time = time.time()  # End the timer
+    # Calculate elapsed
 
-    with open("answers.txt", "a") as answers_file:
-        answers_file.write(f"{n}m{end_time - start_time:.3f}s\n")
+    elapsed_time = time.time() - start_time
+
 
 
     # Print each team's chances of winning, according to simulation
