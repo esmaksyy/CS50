@@ -14,10 +14,7 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-
     teams = []
-
-
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     filename = sys.argv[1]
 
@@ -27,10 +24,7 @@ def main():
             team["rating"] = int(team["rating"])
             teams.append(team)
 
-
     counts = {}
-
-
     # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
     for i in range(N):
         winner = simulate_tournament(teams)
