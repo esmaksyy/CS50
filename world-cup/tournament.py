@@ -35,6 +35,11 @@ def main():
         else:
             counts[winner] = 1
 
+    end_time = time.time()  # End the timer
+
+    with open("answers.txt", "a") as answers_file:
+        answers_file.write(f"{n}m{end_time - start_time:.3f}s\n")
+
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
