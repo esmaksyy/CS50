@@ -20,29 +20,24 @@ def main():
 
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     filename = sys.argv[1]
-    
-    with open(filename) as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            teams.append({
-                "team": row["team"],
-                "rating": int(row["rating"])
-            })
+
+    with open(filename) as file:
+        reader = csv.DictReader(file)
+        for team in reader:
+            team["rating"] = int(team["rating"])
+            teams.append(team)
 
 
-    for n in N:
-        # Timer
-        start_time = time.time()
-        counts = {}
+    counts = {}
 
 
-        # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
-        for i in range(n):
-            winner = simulate_tournament(teams)
-            if winner in counts:
-                counts[winner] += 1
-            else:
-                counts[winner] = 1
+    # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
+    for i in range(N):
+        winner = simulate_tournament(teams)
+        if winner in counts:
+            counts[winner] += 1
+        else:
+            counts[winner] = 1
 
         # Calculate elapsed time
         elapsed_time = time.time() - start_time
