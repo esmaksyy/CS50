@@ -1,11 +1,11 @@
 Times:
 
-10 simulations: TODO ()
-100 simulations: TODO (record time using 0m0.000s format)
-1000 simulations: TODO (record time using 0m0.000s format)
-10000 simulations: TODO (record time using 0m0.000s format)
-100000 simulations: TODO (record time using 0m0.000s format)
-1000000 simulations: TODO (record time using 0m0.000s format)
+10 simulations: TODO (0m0,027s)
+100 simulations: TODO (0m0,041s)
+1000 simulations: TODO (0m0,035s)
+10000 simulations: TODO (0m0,093s)
+100000 simulations: TODO (0m0,735s)
+1000000 simulations: TODO (0m6,388s)
 
 Questions:
 
