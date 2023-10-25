@@ -31,7 +31,7 @@ def main():
 
         # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
         for i in range(N):
-            winning_team = simulate_tournament(teams)
+            winner_team = simulate_tournament(teams)
             if winning_team in counts:
                 counts[winning_team] += 1
             else:
