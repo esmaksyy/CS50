@@ -19,12 +19,10 @@ def main():
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     with open(sys.argv[1]) as file:
         reader = csv.DictReader(file)
-
         for row in reader:
           team_name = row['team']
           team_rating = int(row['rating'])
           teams.append({'team': team_name, 'rating': team_rating})
-        print(teams)
 
 
     for n in N:
