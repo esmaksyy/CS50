@@ -24,11 +24,6 @@ def main():
           team_rating = int(row['rating'])
           teams.append({'team': team_name, 'rating': team_rating})
 
-
-    for n in N:
-        counts = {}
-        start_time = time.time() # Start the timer
-
         # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
         for i in range(N):
            winner_team = simulate_tournament(teams)
@@ -37,17 +32,9 @@ def main():
            else:
              counts[winner_team] = 1
 
-        # Calculate elapsed
-        elapsed_time = time.time() - start_time
-
         # Print each team's chances of winning, according to simulation
         for team in sorted(counts, key=lambda team: counts[team], reverse=True):
             print(f"{team}: {counts[team] * 100 / n:.1f}% chance of winning")
-
-        # Printf time taken
-        print(f"Elapsed time for (n) simulations: {elapsed_time:.3f}s")
-        print()
-
 
 def simulate_game(team1, team2):
     """Simulate a game. Return True if team1 wins, False otherwise."""
