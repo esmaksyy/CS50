@@ -15,8 +15,7 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
-    file = open("ph)
-    filename = sys.argv[1]
+    file = open(sys.argv[1], "r")
 
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
     with open(filename) as f:
