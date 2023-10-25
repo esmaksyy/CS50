@@ -78,7 +78,7 @@ def simulate_tournament(teams):
     # TODO # Simulate rounds until there is only one team left # Return the name of the winning team
     while len(teams) > 1:
         teams = simulate_round(teams)
-    return teams[0]["team"]
+    return teams[0]['team']
 
 
 if __name__ == "__main__":
