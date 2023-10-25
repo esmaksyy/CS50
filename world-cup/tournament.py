@@ -15,16 +15,14 @@ def main():
         sys.exit("Usage: python tournament.py FILENAME")
 
     teams = []
-    file = open(sys.argv[1], "r")
-    reader = csv.DictReader(file)
-    for row in reader:
-        print(row)
-    file.close()
 
     # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
-    with open(filename) as f:
-        reader = csv.DictReader(f)
+    with open(sys.argv[1]) as file:
+        reader = csv.DictReader(file)
+
         for row in reader:
+          print(row)
+
             teams.append({
                 "team": row["team"],
                 "rating": int(row["rating"])
