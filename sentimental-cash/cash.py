@@ -7,7 +7,7 @@ while True:
     if cents > 0:
         break
 
-cents = round(cents*100)
+cents = round(cents * 100)
 
 count = 0
 
@@ -26,7 +26,7 @@ while cents >= 5:
     cents = cents - 5
     count += 1
 
-#Number of dimes
+# Number of dimes
 while cents >= 1:
     cents = cents - 1
     count += 1
