@@ -9,7 +9,7 @@ Times:
 
 Questions:
 
-Which predictions, if any, proved incorrect as you increased the number of simulations?: TODO
+Which predictions, if any, proved incorrect as you increased the number of simulations?: TODO Based on the data, it appears that the predictions became more accurate as the number of simulations increased. The probabilities of the teams winning became more stable and converged towards their true values.
 
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
