@@ -8,34 +8,33 @@ import random
 N = 1000
 
 def main():
-
     # Ensure correct usage
-     if len(sys.argv) != 2:
-         sys.exit("Usage: python tournament.py FILENAME")
+    if len(sys.argv) != 2:
+        sys.exit("Usage: python tournament.py FILENAME")
 
-     teams = []
-     # TODO: Read teams into memory from file
-     with open(sys.argv[1]) as file:
-       reader = csv.DictReader(file)
-       for row in reader:
-         team_name = row['team']
-         team_rating = int(row['rating'])
-         teams.append({'team': team_name, 'rating': team_rating})
+    teams = []
+    # TODO: Read teams into memory from file
+    with open(sys.argv[1]) as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            team_name = row['team']
+            team_rating = int(row['rating'])
+            teams.append({'team': team_name, 'rating': team_rating})
 
-     counts = {}
-     # TODO: Simulate N tournaments and keep track of win counts
+    counts = {}
+    # TODO: Simulate N tournaments and keep track of win counts
 
-     for i in range(N):
+    for i in range(N):
         winner_team = simulate_tournament(teams)
         if winner_team in counts:
-          counts[winner_team] += 1
+            counts[winner_team] += 1
         else:
-         counts[winner_team] = 1
+            counts[winner_team] = 1
 
 
-    # Print each team's chances of winning, according to simulation
-    for team in sorted(counts, key=lambda team: counts[team], reverse=True):
-        print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
+     # Print each team's chances of winning, according to simulation
+     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
+         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
 def simulate_game(team1, team2):
     """Simulate a game. Return True if team1 wins, False otherwise."""
