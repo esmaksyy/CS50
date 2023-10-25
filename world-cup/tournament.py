@@ -23,6 +23,8 @@ def main():
         for row in reader:
           team_name = row['team']
           team_rating = int(row['rating'])
+          teams.append({'team': team_name, 'rating': team_rating})
+        print(teams)
 
 
     for n in N:
