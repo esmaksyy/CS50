@@ -15,7 +15,7 @@ def main():
 
     teams = []
 
-    # TODO: Read teams into memory from file # Append each team's dictionary to the teams list
+    # TODO: Read teams into memory from file
     with open(sys.argv[1]) as file:
         reader = csv.DictReader(file)
         for row in reader:
@@ -23,8 +23,9 @@ def main():
           team_rating = int(row['rating'])
           teams.append({'team': team_name, 'rating': team_rating})
 
-        # TODO: Simulate N tournaments and keep track of win counts # Determine the winner of the tournament # Increment the team's win count in the counts dictionary
-        for i in range(N):
+        counts = {}
+        # TODO: Simulate N tournaments and keep track of win counts
+        
            winner_team = simulate_tournament(teams)
            if winner_team in counts:
              counts[winner_team] += 1
@@ -60,7 +61,7 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
-    # TODO # Simulate rounds until there is only one team left # Return the name of the winning team
+    # TODO # Simulate rounds until there is only one team left
     while len(teams) > 1:
         teams = simulate_round(teams)
     return teams[0]['team']
