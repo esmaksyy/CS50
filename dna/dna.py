@@ -33,6 +33,10 @@ def main():
             if int(person[subsequence]) == result[subsequence]:
                 match += 1
 
+        # If all subsequences match
+        if match == len(subsequences):
+            print
+
     return
 
 
