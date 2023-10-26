@@ -35,7 +35,7 @@ def main():
 
         # If all subsequences match
         if match == len(subsequences):
-            print
+            print(person["name"])
 
     return
 
