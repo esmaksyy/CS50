@@ -36,8 +36,8 @@ def main():
         # If all subsequences match
         if match == len(subsequences):
             print(person["name"])
-
-    return
+            return
+    print("No match")
 
 
 def longest_match(sequence, subsequence):
