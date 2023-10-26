@@ -19,7 +19,7 @@ for i in text:
         sentences += 1
 
 # Coleman-Liau Index
-index = 0.0588 * (letters/words*100) - 0.296 * (sentences/words*100) - 15.8
+index = 0.0588 * (letters / words * 100) - 0.296 * (sentences / words * 100) - 15.8
 
 if index < 1:
     print("Before Grade 1")
