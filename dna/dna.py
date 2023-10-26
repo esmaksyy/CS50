@@ -24,13 +24,13 @@ def main():
 
     results = {}
     for subsequence in subsequences:
-        result[subsequence] = longest_match(dna_sequence, subsequence)
+        results[subsequence] = longest_match(dna_sequence, subsequence)
 
     # TODO: Check database for matching profiles
     for person in database:
         match = 0
         for subsequence in subsequences:
-            if int(person[subsequence]) == result[subsequence]:
+            if int(person[subsequence]) == results[subsequence]:
                 match += 1
 
         # If all subsequences match
