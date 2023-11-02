@@ -1,0 +1,2 @@
+
+We need to collect the music files of the top 100 songs of 2018 and create a dataset containing the features of these songs. To characterize the sonic aura of music, it will be necessary to identify various musical features from songs. Some of these are: Tempo (bpm), Rhythm (beats and bars), Tone (key), melody intensity, Instrumentation (instruments used), Song duration, Balance of vocals and instrumentals, Dynamic range (difference between soft and loud), energy level
