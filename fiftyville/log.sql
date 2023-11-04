@@ -30,8 +30,12 @@ AND month = 7
 AND day = 28
 AND duration < 60;
 
-ALTER TABLE phone_calls
-ADD caller_name text;
+UPDATE phone_calls
+SET caller_name = people.name
+FROM people
+WHERE phone_calls.caller = people.phone_number;
 
-ALTER TABLE phone_calls
-ADD receiver_name text;
+UPDATE phone_calls
+SET receiver_name = people.name
+FROM people
+WHERE phone_calls.receiver = people.phone_number;
