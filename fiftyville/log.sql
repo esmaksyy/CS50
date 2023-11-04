@@ -40,6 +40,16 @@ AND month = 7
 AND day = 28
 AND duration < 60;
 
+UPDATE flights
+SET origin_airport_id = airports.city
+FROM airports
+WHERE flights.origin_airport_id = airports.id;
+
+UPDATE flights
+SET destination_airport_id = airports.city
+FROM airports
+WHERE flights.destination_airport_id = airports.id;
+
 SELECT id, hour, minute, origin_airport_id, destination_airport_id FROM flights
 WHERE year = 2021
 AND month = 7
