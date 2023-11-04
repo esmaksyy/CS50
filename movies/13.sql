@@ -4,4 +4,4 @@ JOIN stars ON stars.person_id = people.id
 JOIN movies ON movies.id = stars.movie_id
 WHERE movies.id IN
 (SELECT movies.id FROM movies
-JOIN stars ON stars)
+JOIN stars ON stars.)
