@@ -26,3 +26,15 @@
 | exit     | 322W7JE       | Diana   |
 | exit     | 0NTHK55       | Kelsey  |
 +----------+---------------+---------+
++---------+------------------+
+|  name   | transaction_type |
++---------+------------------+
+| Bruce   | withdraw         |
+| Diana   | withdraw         |
+| Brooke  | withdraw         |
+| Kenny   | withdraw         |
+| Iman    | withdraw         |
+| Luca    | withdraw         |
+| Taylor  | withdraw         |
+| Benista | withdraw         |
++---------+------------------+
