@@ -83,7 +83,8 @@ AND atm_transactions.day = 28
 AND atm_location = "Leggett Street"
 AND atm_transactions.transaction_type = "withdraw")
 AND name IN
-(JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate
+(SELECT people.name FROM people
+JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate
 WHERE bakery_security_logs.year = 2021
 AND bakery_security_logs.month = 7
 AND bakery_security_logs.day = 28
