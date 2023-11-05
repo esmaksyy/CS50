@@ -62,3 +62,5 @@ JOIN passengers ON people.passport_number = passengers.passport_number
 JOIN flights ON flights.id = passengers.flight_id
 WHERE flights.id = 36
 ORDER BY flights.hour ASC;
+
+SELECT name FROM people
