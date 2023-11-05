@@ -66,3 +66,6 @@ ORDER BY flights.hour ASC;
 SELECT name FROM people
 JOIN passengers ON people.passport_number = passengers.passport_number
 JOIN flights ON flights.id = passengers.flight_id
+WHERE (flights.year = 2021 AND flights.month = 7 AND flights.day = 29 AND flights.id = 36)
+AND name IN
+()
