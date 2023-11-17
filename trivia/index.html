@@ -16,6 +16,15 @@
                     document.querySelector("#answer1").innerHTML = "Correct!";
                 });
 
+                // When any incorrect answer is clicked, the button will turn red
+                let incorrect = document.querySelectorAll(".incorrect");
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener("click", function() {
+                        incorrect[i].style.backgroundColor="red";
+                        document.querySelector("#answer1").innerHTML = "Incorrect!";
+                    });
+                }
+
             })
         </script>
     </head>
