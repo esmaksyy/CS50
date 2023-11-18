@@ -27,3 +27,7 @@ nav li {
 body.contact {
     background-color: #ffffcc;
 }
+
+section.contact {
+        color: white;
+}
