@@ -23,3 +23,26 @@ nav li {
     margin: 20px;
 }
 
+body.contact {
+    background-color: #fff6e5; /* Light yellow background for the contact page */
+}
+
+header.contact {
+    background-color: #ffd699; /* Light yellow background for the header on contact page */
+}
+
+h2.contact {
+    color: #ff9900; /* Dark yellow heading color for the contact page */
+}
+
+p.contact {
+    margin-bottom: 10px;
+}
+
+a.contact {
+    color: #cc6600; /* Dark orange link color for the contact page */
+}
+
+a.contact:hover {
+    text-decoration: underline;
+}
