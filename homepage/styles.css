@@ -40,4 +40,9 @@ h1, h2, h3 {
     color: #ff1493;
 }
 
+.content h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
 
