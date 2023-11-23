@@ -36,6 +36,19 @@ def index():
             flash("All fields must be filled.", "error")
             return redirect("/")
 
+        # Validation: Check if month and day are integers
+        try:
+            month = int(month)
+            day = int(day)
+        except ValueError:
+            flash("Month and day must be numbers.", "error")
+            return redirect("/")
+
+        # Validation: Check for valid month and day values
+        if not 1 <= month <= 12 or not 1 <= day <= 31:
+            flash("Enter a valid month (1-12) and day (1-31).", "error")
+            return redirect("/")
+
         # Insert info into db table
         db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day)",
                    name=name, month=month, day=day)
