@@ -32,7 +32,7 @@ def index():
         day = request.form.get("day")
 
         # Insert info into db table
-        db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day))",
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day)",
                    name=name, month=month, day=day)
 
         return redirect("/")
