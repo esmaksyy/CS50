@@ -53,6 +53,9 @@ def index():
         try:
             db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day)",
                        name=name, month=month, day=day)
+        except Exception as e:
+            flash(f"An error occurred: {e}", "error")
+            return redirect("/")
 
         return redirect("/")
 
