@@ -49,9 +49,10 @@ def index():
             flash("Enter a valid month (1-12) and day (1-31).", "error")
             return redirect("/")
 
-        # Insert info into db table
-        db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day)",
-                   name=name, month=month, day=day)
+        # Database insertion with error handling
+        try:
+            db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day)",
+                       name=name, month=month, day=day)
 
         return redirect("/")
 
