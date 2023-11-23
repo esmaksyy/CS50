@@ -33,6 +33,7 @@ def index():
 
         # Insert info into db table
         db.execute("INSERT INTO birthdays (name, month, day) VALUES (:name, :month, :day))",
+                   name=name, month=month, day=day)
 
         return redirect("/")
 
