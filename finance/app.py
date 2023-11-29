@@ -113,6 +113,11 @@ def register():
         username = request.form.get('username')
         password = request.form.get('password')
         confirmation = request.form.get('confirmation')
+
+        if not username:
+            return apology('Please enter Username!')
+        elif not password:
+            
     else:
         return render_template("register.html")
 
