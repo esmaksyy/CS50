@@ -5,6 +5,6 @@
 {% endblock %}
 
 {% block main %}
-    <h2>Stock Quote for {{ quoted.name }} ({{ quoted.symbol }})</h2>
-    <p>Current Price: {{ usd(quoted.price) }}</p>
+    <h2>Stock Quote for {{ item.name }} ({{ item.symbol }})</h2>
+    <p>Current Price: {{ usd(item.price) }}</p>
 {% endblock %}
