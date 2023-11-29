@@ -7,7 +7,7 @@
 {% block main %}
     {% if item %}
         <h2>Stock Quote for {{ item['name'] }} ({{ item['symbol'] }})</h2>
-        <p>Current Price: {{ usd(item['price']) }}</p>
+        <p>Current Price: {{ usd_function(item['price']) }}</p>
     {% else %}
         <p>No stock information available.</p>
     {% endif %}
