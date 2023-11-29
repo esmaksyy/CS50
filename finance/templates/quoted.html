@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block main %}
-    <h2>Stock Quote for {{ item['name'] }} ({{ item['symbol'] }})</h2>
-    <p>Current Price: {{ usd(item['price']) }}</p>
+    {% if item %}
+        <h2>Stock Quote for {{ item['name'] }} ({{ item['symbol'] }})</h2>
+        <p>Current Price: {{ usd(item['price']) }}</p>
+    {% else %}
+        <p>No stock information available.</p>
+    {% endif %}
 {% endblock %}
