@@ -125,8 +125,8 @@ def register():
             return apology('Passwords do not match!')
 
         hash = generate_password_hash(password)
-        
-        db.execute("INSERT INTO users")
+
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
         return redirect('/')
     else:
         return render_template("register.html")
