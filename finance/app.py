@@ -118,6 +118,8 @@ def register():
             return apology('Please enter Username!')
         elif not password:
             return apology('Please enter password!')
+        elif not confirmation:
+            return apology('Password confirmation is required!')
     else:
         return render_template("register.html")
 
