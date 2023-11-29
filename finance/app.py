@@ -124,6 +124,7 @@ def register():
         if password != confirmation:
             return apology('Passwords do not match!')
 
+        db.execute("INSERT INTO users")
         return redirect('/')
     else:
         return render_template("register.html")
