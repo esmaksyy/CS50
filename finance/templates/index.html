@@ -18,8 +18,16 @@
             {% for stock in stocks %}
             <tr>
                 <td> {{ stock["symbol"] }} </td>
+                <td> {{ stock["name"] }} </td>
+                <td> {{ stock["totalShares"] }} </td>
+                <td> {{ stock["price"] }} </td>
+                <td> {{ stock["totalShares"] & stock["price"] }} </td>
             </tr>
             {% endfor %}
+
+            <tr>
+                <td>CASH</td>
+            </tr>
         </tbody>
 
         <tfoot>
