@@ -60,6 +60,7 @@ def buy():
             return apology("Shares must be a positive integer!")
 
         user_id = session["user_id"]
+        cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
     else:
         return render_template("buy.html")
 
