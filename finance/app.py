@@ -64,6 +64,9 @@ def buy():
 
         item_name = item["name"]
         item_price = item["price"]
+        total_price = item_price * shares
+
+        
 
         return redirect('/')
     else:
