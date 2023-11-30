@@ -60,8 +60,8 @@ def buy():
             return apology("Shares must be a positive integer!")
 
         user_id = session["user_id"]
-        cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
-        print(f'\n\n{cash}\n\n')
+        cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+        
 
         return redirect('/')
     else:
