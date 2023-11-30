@@ -38,6 +38,7 @@ def index():
     user_id = session["user_id"]
 
     stocks = db.execute("SELECT symbol, name, price, SUM(shares) FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
 
 
 @app.route("/buy", methods=["GET", "POST"])
