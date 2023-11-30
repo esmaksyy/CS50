@@ -58,6 +58,8 @@ def buy():
 
         if shares <= 0:
             return apology("Shares must be a positive integer!")
+
+        
     else:
         return render_template("buy.html")
 
