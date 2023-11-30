@@ -21,7 +21,7 @@
                 <td> {{ stock["name"] }} </td>
                 <td> {{ stock["totalShares"] }} </td>
                 <td> {{ usd(stock["price"]) }} </td>
-                <td> {{ usd(stock["totalShares"] & stock["price"]) }} </td>
+                <td> {{ usd(stock["totalShares"] * stock["price"]) }} </td>
             </tr>
             {% endfor %}
 
@@ -34,7 +34,7 @@
 
         <tfoot>
             <td colspan="4"></td>
-            <td> {{ usd(total) }} </td>
+            <td><strong> {{ usd(total) }} </strong></td>
         </tfoot>
     </table>
 {% endblock %}
