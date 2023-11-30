@@ -70,7 +70,7 @@ def buy():
             return apology("There is not enough cash in your account!")
         else:
             db.execute("UPDATE users SET cash = ? WHERE id = ?", cash - total_price, user_id)
-            db.execute("INSERT INTO transactions (user_id, name, shares, price, type, symbol) VALUES (?, ?, ?, ?, ?, ?)"
+            db.execute("INSERT INTO transactions (user_id, name, shares, price, type, symbol) VALUES (?, ?, ?, ?, ?, ?)",
                        user_id, item_name, shares, item_price, 'buy', symbol)
 
         return redirect('/')
