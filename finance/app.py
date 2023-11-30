@@ -63,6 +63,7 @@ def buy():
         cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         item_name = item["name"]
+        item_price = item["price"]
 
         return redirect('/')
     else:
