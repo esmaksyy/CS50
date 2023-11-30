@@ -67,7 +67,9 @@ def buy():
         total_price = item_price * shares
 
         if cash < total_price:
-            return apology(")
+            return apology("There is not enough cash in your account!")
+        else:
+            
 
         return redirect('/')
     else:
