@@ -66,7 +66,8 @@ def buy():
         item_price = item["price"]
         total_price = item_price * shares
 
-        
+        if cash < total_price:
+            return apology(")
 
         return redirect('/')
     else:
