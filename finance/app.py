@@ -197,4 +197,4 @@ def sell():
     if request.method == "POST":
         pass
     else:
-        
+        symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol")
