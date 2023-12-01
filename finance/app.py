@@ -213,6 +213,10 @@ def sell():
 
         current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
         db.execute("UPDATE users SET cash = ? WHERE id = ?", current_cash + price, user_id)
+        db.execute("INSERT INTO transactions (user_id, name, shares, price, type, symbol) VALUES (?, ?, ?, ?, ?, ?)",
+                   user_id, item_name, -shares, item_price, "sell", symbol)
+        return redirect("/")
+
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
