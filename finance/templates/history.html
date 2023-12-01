@@ -15,13 +15,13 @@
         </thead>
 
         <tbody>
-            {% for stock in stocks %}
+            {% for transaction in transactions %}
             <tr>
-                <td> {{ stock["symbol"] }} </td>
-                <td> {{ stock["name"] }} </td>
-                <td> {{ stock["totalShares"] }} </td>
-                <td> {{ usd(stock["price"]) }} </td>
-                <td> {{ usd(stock["totalShares"] * stock["price"]) }} </td>
+                <td> {{ transaction["symbol"].upper() }} </td>
+                <td> {{ transaction["type"] }} </td>
+                <td> {{ transaction["shares"] }} </td>
+                <td> {{ usd(transaction["price"]) }} </td>
+                <td> {{ transaction["time"] }} </td>
             </tr>
             {% endfor %}
 
