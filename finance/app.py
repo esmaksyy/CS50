@@ -196,6 +196,10 @@ def sell():
 
     if request.method == "POST":
         user_id = session["user_id"]
+        symbol = request.form.get("symbol")
+        shares = int(request.form.get("shares"))
+
+        
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
