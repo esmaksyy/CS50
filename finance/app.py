@@ -195,7 +195,7 @@ def sell():
     """Sell shares of stock"""
 
     if request.method == "POST":
-        pass
+        user_id = session["user_id"]
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
