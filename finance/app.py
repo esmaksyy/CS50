@@ -204,6 +204,8 @@ def sell():
 
         item_price = lookup(symbol) ["price"]
         item_name = lookup(symbol) ["name"]
+
+        shares_owned = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol", user_id, symbol)
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
