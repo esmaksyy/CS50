@@ -199,6 +199,9 @@ def sell():
         symbol = request.form.get("symbol")
         shares = int(request.form.get("shares"))
 
+        if shares <= 0:
+            return apology("Shares must be a positive number!")
+
         
     else:
         user_id = session["user_id"]
