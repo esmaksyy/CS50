@@ -202,7 +202,8 @@ def sell():
         if shares <= 0:
             return apology("Shares must be a positive number!")
 
-        item_price = lookup(symbol) ['price]
+        item_price = lookup(symbol) ["price"]
+        item_name = lookup(symbol) ["name"]
     else:
         user_id = session["user_id"]
         symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
