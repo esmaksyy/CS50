@@ -154,7 +154,8 @@ def register():
         except:
             return apology("Email Already Used")
 
-        session["user_id"] = newUser
+        user_id = db.execute("SELECT last_insert_rowid()")[0]["last_insert_rowid()"]
+        session["user_id"] = user_id
 
         return redirect("/")
 
