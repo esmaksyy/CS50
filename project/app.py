@@ -132,6 +132,11 @@ def register():
 
         hash = generate_password_hash(password)
 
+        try:
+            db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", email, hash)
+        except:
+            return apology(" Already Taken")
+
 
 @app.route("/answer", methods=["GET", "POST"])
 @login_required
