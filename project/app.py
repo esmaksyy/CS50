@@ -137,6 +137,8 @@ def register():
         except:
             return apology("Email Already Used")
 
+        session["user_id"] = newUser
+
 
 @app.route("/answer", methods=["GET", "POST"])
 @login_required
