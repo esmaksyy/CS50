@@ -139,6 +139,8 @@ def register():
 
         session["user_id"] = newUser
 
+        return redirect("/")
+
 
 @app.route("/answer", methods=["GET", "POST"])
 @login_required
