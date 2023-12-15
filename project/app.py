@@ -120,8 +120,8 @@ def register():
     return apology("TODO")
 
 
-@app.route("/sell", methods=["GET", "POST"])
+@app.route("/answer", methods=["GET", "POST"])
 @login_required
-def sell():
+def answer():
     """Sell shares of stock"""
     return apology("TODO")
