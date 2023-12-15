@@ -123,5 +123,5 @@ def register():
 @app.route("/answer", methods=["GET", "POST"])
 @login_required
 def answer():
-    """Sell shares of stock"""
+    """Answer the email on email detail view"""
     return apology("TODO")
