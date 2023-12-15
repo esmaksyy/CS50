@@ -109,7 +109,7 @@ def logout():
 
 @app.route("/email", methods=["GET", "POST"])
 @login_required
-def quote():
+def email():
     """See email details"""
     return apology("TODO")
 
@@ -117,7 +117,7 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    return apology("TODO")
+    if 
 
 
 @app.route("/answer", methods=["GET", "POST"])
