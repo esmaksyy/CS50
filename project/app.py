@@ -42,13 +42,13 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    """Show portfolio of stocks"""
+    """Show all the emails received"""
     return apology("TODO")
 
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
-def buy():
+def compose():
     """Buy shares of stock"""
     return apology("TODO")
 
