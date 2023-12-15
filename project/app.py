@@ -125,7 +125,10 @@ def register():
         confirmation = request.form.get("confirmation")
 
         if not email or not password or not confirmation:
-            return apology(")
+            return apology("No Free Space")
+
+        if password != confirmation:
+            return apology
 
 
 @app.route("/answer", methods=["GET", "POST"])
