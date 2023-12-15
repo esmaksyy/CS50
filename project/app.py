@@ -128,7 +128,7 @@ def register():
             return apology("No Free Space")
 
         if password != confirmation:
-            return apology
+            return apology("Password Did Not Match")
 
 
 @app.route("/answer", methods=["GET", "POST"])
