@@ -73,7 +73,7 @@ def create():
 @app.route("/sent")
 @login_required
 def sent():
-    """Show history of transactions"""
+    """Show sent emails"""
     return apology("TODO")
 
 
