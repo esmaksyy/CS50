@@ -62,7 +62,7 @@ def create():
         subject = request.form.get("subject")
         body = request.form.get("body")
 
-        if not sender or nor receiver or not subject or not body:
+        if not sender or not receiver or not subject or not body:
             return apology("No Free Space")
 
         db.execute("INSERT INTO emails (sender, receiver, subject, body) VALUES (?, ?, ?, ?)", sender, receiver, subject, body)
