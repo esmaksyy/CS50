@@ -118,6 +118,7 @@ def email():
 def register():
     """Register user"""
     if request.method == "GET":
+        return render_template("register.html")
 
 
 @app.route("/answer", methods=["GET", "POST"])
