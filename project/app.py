@@ -50,7 +50,14 @@ def index():
 @login_required
 def create():
     """Write an email to someone"""
-    return apology("TODO")
+    if request.method == "GET":
+        userId = session["user_id"]
+        senderDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
+        sender = senderDB[0] ["username"]
+        return render_template("create.html", sender=sender)
+
+    else:
+        sender = request.form.get("sender")
 
 
 @app.route("/sent")
