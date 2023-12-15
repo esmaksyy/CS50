@@ -117,7 +117,7 @@ def email():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    if 
+    if request.method == "GET":
 
 
 @app.route("/answer", methods=["GET", "POST"])
