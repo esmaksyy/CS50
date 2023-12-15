@@ -63,7 +63,7 @@ def create():
         body = request.form.get("body")
 
         if not sender or nor receiver or not subject or not body:
-            return apology(")
+            return apology("No Free Space")
 
 
 @app.route("/sent")
