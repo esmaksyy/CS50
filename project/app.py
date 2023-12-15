@@ -124,6 +124,9 @@ def register():
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
 
+        if not email or not password or not confirmation:
+            return apology(")
+
 
 @app.route("/answer", methods=["GET", "POST"])
 @login_required
