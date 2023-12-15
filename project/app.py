@@ -122,7 +122,7 @@ def register():
     else:
         email = request.form.get("email")
         password = request.form.get("password")
-        confirmation = request.form.get("confirm")
+        confirmation = request.form.get("confirmation")
 
 
 @app.route("/answer", methods=["GET", "POST"])
