@@ -110,7 +110,7 @@ def logout():
 @app.route("/email", methods=["GET", "POST"])
 @login_required
 def quote():
-    """Get stock quote."""
+    """See email details"""
     return apology("TODO")
 
 
