@@ -48,8 +48,8 @@ def index():
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
-def compose():
-    """Buy shares of stock"""
+def create():
+    """Write an email to someone"""
     return apology("TODO")
 
 
