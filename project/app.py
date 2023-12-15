@@ -62,6 +62,9 @@ def create():
         subject = request.form.get("subject")
         body = request.form.get("body")
 
+        if not sender or nor receiver or not subject or not body:
+            return apology(")
+
 
 @app.route("/sent")
 @login_required
