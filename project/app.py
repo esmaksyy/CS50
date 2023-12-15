@@ -58,9 +58,9 @@ def create():
 
     else:
         sender = request.form.get("sender")
-        recipient = request.form.get("sender")
-        sender = request.form.get("sender")
-        sender = request.form.get("sender")
+        receiver = request.form.get("receiver")
+        subject = request.form.get("subject")
+        body = request.form.get("body")
 
 
 @app.route("/sent")
