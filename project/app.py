@@ -65,6 +65,10 @@ def create():
         if not sender or nor receiver or not subject or not body:
             return apology("No Free Space")
 
+        db.execute("INSERT INTO emails (sender, receiver, subject, body) VALUES (?, ?, ?, ?)", sender, receiver, subject, body)
+
+        return redirect("/sent")
+
 
 @app.route("/sent")
 @login_required
