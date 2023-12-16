@@ -40,24 +40,15 @@ def after_request(response):
 
 
 
-@app.route("/inbox", methods=["GET", "POST"])
+@app.route("/")
 @login_required
 def inbox():
-    """Show all the emails received"""
-    if request.method == "POST":
-        userId = session["user_id"]
-        usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
-        username = usernameDB[0]["username"]
-        emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
-        return render_template("index.html", emails=emails)
-    else:
-        userId = session["user_id"]
-        usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
-        username = usernameDB[0]["username"]
-        emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
-        return render_template("index.html", emails=emails)
-
-    return redirect("/inbox")
+    """Show sent emails"""
+    userId = session["user_id"]
+    usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
+    username = usernameDB[0]["username"]
+    emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
+    return render_template("index.html", emails=emails)
 
 
 
