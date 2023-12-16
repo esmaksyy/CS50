@@ -42,6 +42,7 @@ def after_request(response):
 @app.route("/")
 @login_required
 def inbox():
+    try:
     """Show sent emails"""
     userId = session["user_id"]
     usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
