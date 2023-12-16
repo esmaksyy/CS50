@@ -75,7 +75,7 @@ def create():
 def sent():
     """Show sent emails"""
     userId = session["user_id"]
-    emails = db.execute
+    emails = db.execute("SELECT * FROM emails WHERE sender = ?")
 
 
 @app.route("/login", methods=["GET", "POST"])
