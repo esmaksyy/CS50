@@ -5,7 +5,8 @@ from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
-from helpers import apology, login_required, usd
+
+from helpers import apology, login_required, lookup, usd
 
 # Configure application
 app = Flask(__name__)
@@ -42,10 +43,9 @@ def after_request(response):
 @app.route("/")
 @login_required
 def inbox():
-    try:
     """Show sent emails"""
     userId = session["user_id"]
-    usernameDB =db.execute("SELECT username FROM users WHERE id = ?", user_id)[0]["username"]
+    usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
     username = usernameDB[0]["username"]
     emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
     return render_template("index.html", emails=emails)
