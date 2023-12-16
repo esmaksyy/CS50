@@ -44,16 +44,22 @@ def after_request(response):
 @login_required
 def inbox():
     """Show all the emails received"""
-    userId = session["user_id"]
-    usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
-    username = usernameDB[0]["username"]
-
     if request.method == "POST":
+        userId = session["user_id"]
+        usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
+        username = usernameDB[0]["username"]
         emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
         return render_template("index.html", emails=emails)
     else:
+        userId = session["user_id"]
+        usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
+        username = usernameDB[0]["username"]
         emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
         return render_template("index.html", emails=emails)
+
+    return redirect("/inbox")
+
+
 
 @app.route("/create", methods=["GET", "POST"])
 @login_required
@@ -62,8 +68,9 @@ def create():
     if request.method == "GET":
         userId = session["user_id"]
         senderDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
-        sender = senderDB[0]["username"]
+        sender = senderDB[0] ["username"]
         return render_template("create.html", sender=sender)
+
     else:
         sender = request.form.get("sender")
         receiver = request.form.get("receiver")
@@ -76,7 +83,6 @@ def create():
         db.execute("INSERT INTO emails (sender, receiver, subject, body) VALUES (?, ?, ?, ?)", sender, receiver, subject, body)
 
         return redirect("/sent")
-
 
 
 @app.route("/sent")
