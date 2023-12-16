@@ -71,3 +71,8 @@ textarea:hover {
 .list-group-item button:hover {
     background-color: #0056b3;
 }
+
+.view-email{
+    display: flex;
+    flex-direction
+}
