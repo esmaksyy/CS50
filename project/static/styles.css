@@ -39,3 +39,9 @@ textarea:hover {
     border-color: #666;
 }
 
+.list-group-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
