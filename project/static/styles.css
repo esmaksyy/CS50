@@ -79,3 +79,9 @@ textarea:hover {
     align-items: flex-start;
     width: 300px;
 }
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
