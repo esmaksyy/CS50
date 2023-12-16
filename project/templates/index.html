@@ -5,14 +5,24 @@
 {% endblock %}
 
 {% block main %}
-    <div>
-        {% for email in emails %}
-        <div class="list-group-item">
-            <h6>Sender: {{ email.sender }}</h6>
-            <h2>{{ email.subject }}</h2>
-            <p>{{ email.timestamp }}</p>
-        </div>
+    <div class="container mt-5">
+        <h1 class="mb-4">Received Emails</h1>
 
+        {% for email in emails %}
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Sender: {{ email.sender }}</h5>
+                </div>
+                <div class="card-body">
+                    <h2>{{ email.subject }}</h2>
+                    <p class="text-muted">{{ email.timestamp }}</p>
+                    <p>{{ email.body }}</p>
+                </div>
+            </div>
         {% endfor %}
+
+        {% if not emails %}
+            <p class="text-muted">No emails received.</p>
+        {% endif %}
     </div>
 {% endblock %}
