@@ -21,3 +21,10 @@ nav .navbar-brand .green
 {
     color: #2e944b;
 }
+
+textarea{
+    width: 200px;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 10 px;
+}
