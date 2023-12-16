@@ -40,7 +40,7 @@ def after_request(response):
 
 
 
-@app.route("/")
+@app.route("/inbox")
 @login_required
 def inbox():
     """Show all the emails received"""
