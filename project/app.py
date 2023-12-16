@@ -38,9 +38,9 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-
-
 @app.route("/")
+
+@app.route("/inbox")
 @login_required
 def inbox():
     """Show all the emails received"""
