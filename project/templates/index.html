@@ -17,5 +17,9 @@
             </form>
         </div>
         {% endfor %}
+        
+        {% if not emails %}
+            <p class="text-muted">No emails received.</p>
+        {% endif %}
     </div>
 {% endblock %}
