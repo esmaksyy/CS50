@@ -8,19 +8,19 @@
     <form action="/create" method="post">
         <div class="mb-3">
             <label>From:</label>
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="sender" type="email" value="{{ sender }}">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="sender" type="email" value="{{ emailDetail.receiver }}">
         </div>
         <div class="mb-3">
             <label>To:</label>
-            <input class="form-control mx-auto w-auto" id="receiver" name="receiver" placeholder="Receiver" type="email">
+            <input class="form-control mx-auto w-auto" id="receiver" name="receiver" placeholder="Receiver" type="email" value="{{ emailDetail.sender }}>
         </div>
         <div class="mb-3">
             <label>Subject:</label>
-            <input class="form-control mx-auto w-auto" id="subject" name="subject" placeholder="Subject" type="text">
+            <input class="form-control mx-auto w-auto" id="subject" name="subject" placeholder="Subject" type="text" value="{{ emailDetail.subject }}">
         </div>
         <div class="mb-3">
             <textarea name="body"></textarea>
         </div>
-        <button class="btn btn-primary" type="submit">Send</button>
+        <button class="btn btn-primary" type="submit">Answer</button>
     </form>
 {% endblock %}
