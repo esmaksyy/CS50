@@ -49,7 +49,6 @@ def inbox():
         usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
         username = usernameDB[0]["username"]
         emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
-        print(emails)
         return render_template("index.html", emails=emails)
     else:
         userId = session["user_id"]
