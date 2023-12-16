@@ -74,7 +74,8 @@ def create():
 @login_required
 def sent():
     """Show sent emails"""
-    return apology("TODO")
+    userId = session["user_id"]
+    emails = db.execute
 
 
 @app.route("/login", methods=["GET", "POST"])
