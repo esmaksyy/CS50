@@ -75,7 +75,10 @@ def create():
 def sent():
     """Show sent emails"""
     userId = session["user_id"]
-    emails = db.execute("SELECT * FROM emails WHERE sender = ?")
+    usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
+    username = usernameDB[0]["username"]
+    emails = db.execute("SELECT * FROM emails WHERE sender = ?", username)
+    return jsonify(emails)
 
 
 @app.route("/login", methods=["GET", "POST"])
