@@ -179,3 +179,6 @@ def answer():
     """Answer the email on email detail view"""
     if request.method == "POST":
         emailId = request.form.get("emailId")
+        emailDetailDB = db.execute("SELECT * FROM emails WHERE id = ?", emailId)
+        emailDetail = emailDetailDB[0]
+        return render_template("email.html", emailDetail=emailDetail)
