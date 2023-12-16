@@ -43,9 +43,9 @@ def after_request(response):
 @app.route("/")
 @login_required
 def inbox():
-    """Show sent emails"""
+    """Show all the emails received"""
     userId = session["user_id"]
-    usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
+    usernameDB = db.execute("SELECT username FROM users WHERE id = ?", userId)
     username = usernameDB[0]["username"]
     emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
     return render_template("index.html", emails=emails)
