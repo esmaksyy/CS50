@@ -174,7 +174,7 @@ def register():
         return redirect("/")
 
 
-@app.route("/answer", methods=["POST"])
+@app.route("/reply", methods=["POST"])
 @login_required
 def answer():
     """Answer the email on email detail view"""
