@@ -39,9 +39,36 @@ textarea:hover {
     border-color: #666;
 }
 
-.list-group-item{
+.list-group-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+.list-group-item span {
+    margin-right: 10px;
+}
+
+.list-group-item button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item button:hover {
+    background-color: #0056b3;
 }
