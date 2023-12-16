@@ -1,29 +1,29 @@
 # MAILBOX
 #### Video Demo:  <URL HERE>
 #### Description:
-# Mailbox Web Application
+# Email Web App
 
-This project encompasses a simple web-based application where users can register, log in, log out, and exchange emails. The main goal of the project is to provide basic email functionality and enable users to communicate using this functionality.
+This project is a web application that lets users sign up, log in, log out, and exchange emails. The primary aim is to provide basic email features for user communication.
 
-## Files and Contents
+## Project Files and Content
 
-- **styles.css:** This is the project's style file containing design choices for the user interface.
-- **answer.html:** Represents the page where users can respond to email messages.
-- **apology.html:** Contains the page where users can send an apology message.
-- **create.html:** Represents the page for creating a new email.
-- **email.html:** Contains the page where users can view a received email in detail.
-- **index.html:** The main page containing general user information.
-- **layout.html:** The general template file determining the page layout.
-- **login.html:** Contains the page where users can log in.
-- **register.html:** Represents the registration page where new user accounts can be created.
+- **styles.css:** Manages the project's visual style.
+- **answer.html:** Allows users to respond to emails.
+- **apology.html:** Provides a page for sending apology messages.
+- **create.html:** Enables users to compose new emails.
+- **email.html:** Displays detailed views of received emails.
+- **index.html:** The main page with general user information.
+- **layout.html:** Defines the overall page layout.
+- **login.html:** The page for user logins.
+- **register.html:** Allows new users to create accounts.
 
 ## Technologies Used
 
-JavaScript, Python, and SQL have been utilized in this project. JavaScript is used to make the user interface interactive and manage email sending/receiving. Python is preferred for creating the backend of the web application and handling user data. SQL is employed as the database language to store user accounts and email data.
+JavaScript, Python, and SQL are utilized. JavaScript enhances the user interface and handles email transactions. Python manages the backend and user data, while SQL is used for storing account and email data.
 
-## Design Choices
+## Design Decisions
 
-The color palette and layout used in the project design were selected to provide a user-friendly interface. Additionally, careful attention has been given to ensuring that the page layout and navigation are understandable for users. Consistent visuals across pages have been achieved using HTML and CSS.
+The design choices prioritize a user-friendly interface, with attention to consistent visuals and navigational clarity using HTML and CSS.
 
-This project aims to meet users' daily communication needs by utilizing basic email functionality. The developer has carefully chosen the technologies and design elements to enhance the user experience and allow users to interact comfortably with the application.
+This project aims to fulfill basic communication needs through email functionality. The technologies and design elements are chosen to enhance user experience and usability.
 
