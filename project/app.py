@@ -57,6 +57,9 @@ def inbox():
         emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
         return render_template("index.html", emails=emails)
 
+    return redirect("/inbox")
+
+
 
 @app.route("/create", methods=["GET", "POST"])
 @login_required
