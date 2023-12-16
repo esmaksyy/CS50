@@ -78,7 +78,7 @@ def sent():
     usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
     username = usernameDB[0]["username"]
     emails = db.execute("SELECT * FROM emails WHERE sender = ?", username)
-    return jsonify(emails)
+    return render_template()
 
 
 @app.route("/login", methods=["GET", "POST"])
