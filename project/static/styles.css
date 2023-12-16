@@ -22,9 +22,20 @@ nav .navbar-brand .green
     color: #2e944b;
 }
 
-textarea{
+textarea {
     width: 200px;
     height: 100px;
-    border: 1px solid lightgray;
-    border-radius: 10 px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: none;
+    transition: border-color 0.3s ease;
 }
+
+textarea:hover {
+    border-color: #666;
+}
+
