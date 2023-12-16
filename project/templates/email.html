@@ -48,5 +48,11 @@
                 <p class="card-text">{{ emailDetail.body }}</p>
             </div>
         </div>
+        <div>
+            <form action="reply" method="post">
+                <input type="hidden" name="emailId" value="{{ emailDetail.id }}">
+                <input type="submit" class="btn btn-success" value="Answer">
+            </form>
+        </div>
     </div>
 {% endblock %}
