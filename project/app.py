@@ -177,4 +177,5 @@ def register():
 @login_required
 def answer():
     """Answer the email on email detail view"""
-    return apology("TODO")
+    if request.method == "POST":
+        emailId = request.form.get("emailId")
