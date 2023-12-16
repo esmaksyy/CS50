@@ -181,4 +181,4 @@ def answer():
         emailId = request.form.get("emailId")
         emailDetailDB = db.execute("SELECT * FROM emails WHERE id = ?", emailId)
         emailDetail = emailDetailDB[0]
-        return render_template("email.html", emailDetail=emailDetail)
+        return render_template("answer.html", emailDetail=emailDetail)
