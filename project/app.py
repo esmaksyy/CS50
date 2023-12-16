@@ -48,7 +48,7 @@ def inbox():
     usernameDB =db.execute("SELECT username FROM users WHERE id = ?", userId)
     username = usernameDB[0]["username"]
     emails = db.execute("SELECT * FROM emails WHERE receiver = ?", username)
-    return render_template("inbox.html", emails=emails)
+    return render_template("index.html", emails=emails)
 
 
 @app.route("/create", methods=["GET", "POST"])
