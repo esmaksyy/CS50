@@ -48,11 +48,14 @@
                 <p class="card-text">{{ emailDetail.body }}</p>
             </div>
         </div>
-        <div>
+        <div class="mt-3">
             <form action="reply" method="post">
                 <input type="hidden" name="emailId" value="{{ emailDetail.id }}">
-                <input type="submit" class="btn btn-success" value="Answer">
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-reply"></i> Answer
+                </button>
             </form>
         </div>
+
     </div>
 {% endblock %}
