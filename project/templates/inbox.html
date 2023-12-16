@@ -17,6 +17,10 @@
                     <h2>{{ email.subject }}</h2>
                     <p class="text-muted">{{ email.timestamp }}</p>
                     <p>{{ email.body }}</p>
+                    <form action="email" method="post">
+                        <input type="hidden" name="emailId" value="{{ email.id }}">
+                        <input type="submit" class="
+                    </form>
                 </div>
             </div>
         {% endfor %}
